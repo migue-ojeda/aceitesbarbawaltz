@@ -1,0 +1,29 @@
+  /* BARBA WALTZ PAGE */
+  
+  .cajaBarbaPage{
+    display: grid;
+    grid-template-columns: 2(1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "juvenil casual";
+  justify-content: space-evenly;
+  align-items: center;
+  }
+  
+  h2.barbaPageTitle{
+    text-align: center;
+  }
+  
+  ul.listaBarbaPage{
+    list-style: none;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .juvenil{
+    grid-area: juvenil;
+  }
+  
+  .casual{
+    grid-area: casual;
+  }
+  

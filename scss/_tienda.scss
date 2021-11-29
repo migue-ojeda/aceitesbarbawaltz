@@ -1,0 +1,213 @@
+$Silvestre: #9FBB71;
+$Dulce: #5849BF;
+$Fresco: #04BFBF;
+$Oriental:#D6AE70;
+ 
+
+ /* TIENDA */
+  $main-color: #f0e0c4;
+
+  .fuente-main{
+    color: $main-color;
+  }
+  /* Producto 1 */
+
+  @mixin gridProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  @mixin compra {
+    height: 350px;
+    width: 100%;
+
+  }
+
+/* BUCLES */
+  @for $i from 1 through 4 {
+    .lista-#{$i} {
+      height: 250px;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .compra-#{$i} {
+      height: 350px;
+    }
+  }
+/* BUCLES FIN */
+
+/* EACH */
+@each $aceite20 in dulce, fresco, oriental, silvestre {
+  .#{$aceite20}-foto { 
+
+    background-image: url('../images/aceites/#{$aceite20}.jpg');
+
+}
+
+};
+
+$coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
+
+@each $color in $coloresAceites {
+  .fontColor-#{$color}{
+    color: $color;
+  }
+
+}
+
+/* EACH FIN */
+
+  /* MAPA */
+  $aceite:   
+  (Silvestre: #9FBB71,
+  Dulce: #5849BF,
+  Fresco: #04BFBF,
+  Oriental:#D6AE70,
+  );
+  
+  @each $aNombre, $suscolor in $aceite {
+    .fuente-#{$aNombre} {
+      color: $suscolor;
+    }
+  }
+
+  $colors-Compra: 
+  (Silvestre: #9FBB71,
+    Dulce: #5849BF,
+    Fresco: #04BFBF,
+    Oriental:#D6AE70,
+  );
+
+  @each $red, $sucolor in $colors-Compra {
+    .btn--#{$red} {
+      background-color: $sucolor;
+      color: white;
+    }
+  }
+
+  /* MAPA FIN */
+
+  .gridProductos1 {
+    @include gridProductos;
+    grid-area: "imagen1 lista1 compra1";
+  }
+
+  .imagen1 {
+    grid-area: imagen1;
+  }
+
+  .lista1 {
+    grid-area: lista1;
+
+  }
+
+  .compra1 {
+    grid-area: compra1;
+    @include compra;
+  }
+
+  /* Producto 2 */
+  .gridProductos2 {
+    @include gridProductos;
+    grid-area: "imagen2 lista2 compra2";
+  }
+
+  .imagen2 {
+    grid-area: imagen2;
+  }
+
+  .lista2 {
+    grid-area: lista2;
+
+  }
+
+  .compra2 {
+    grid-area: compra2;
+    @include compra;
+  }
+
+  /* Producto 3 */
+
+  .gridProductos3 {
+    @include gridProductos;
+    grid-area: "imagen3 lista3 compra3";
+  }
+
+  .imagen3 {
+    grid-area: imagen3;
+  }
+
+  .lista3 {
+    grid-area: lista3;
+
+  }
+
+  .compra3 {
+    grid-area: compra3;
+    @include compra;
+  }
+
+  /* Producto 4 */
+
+  .gridProductos4 {
+    @include gridProductos;
+    grid-area: "imagen4 lista4 compra4";
+  }
+
+  .imagen4 {
+    grid-area: imagen4;
+  }
+
+  .lista4 {
+    grid-area: lista4;
+
+  }
+
+  .compra4 {
+    grid-area: compra4;
+    @include compra;
+  }
+
+  .cajaDescripcionAceites {
+    list-style-type: none;
+    color: $main-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #efca89;
+    border-radius: 3px;
+    text-align: center;
+    padding: 80px;
+  }
+
+
+  .comprarForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #efca89;
+    border-radius: 3px;
+    text-align: center;
+    padding: 80px;
+  }
+
+
+
+  /* EFECTO IMAGEN PRODUCTO */
+
+  .imagenProducto:hover {
+    transform: scale(1.15);
+    border-radius: 50px;
+    filter: sepia(15%);
+  }
+
+  .animate__animated.animate_fadeIn {
+    --animate-duration: 10s;
+  };

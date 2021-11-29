@@ -1,0 +1,389 @@
+@import "index";
+@import "barba-blog";
+@import "tienda";
+@import "contacto";
+@import "barba-waltz";
+
+
+$main-color: #f0e0c4;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    color: $main-color;
+
+    body {
+        font-size: 1.6rem;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+        h1 {
+            color: $main-color;
+            font-weight: bold;
+            font-size: 3.0rem;
+            font-style: normal;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            border: 0;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+          }
+
+          h2 {
+            color: $main-color;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            margin: 2px;
+            padding: 20px;
+            border: 0;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+          }
+          
+          
+          h3 {
+            color: $main-color;
+            font-style: oblique;
+            font-weight: normal;
+            margin: 0px;
+            padding: 20px;
+            border: 0;
+            text-align: center;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+          }
+          
+          h4 {
+            color: #6B8153;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 2.0rem;
+            margin: 0;
+            padding: 20px;
+            border: 0;
+          }
+    }
+
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  .header__navegador--font{  list-style: none;
+    font-size: 1.6rem;
+    color: white;}
+  
+  
+  .header__navegador {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    background: #F2EDE4;
+    background: -moz-linear-gradient(top, #F2EDE4 0%, #BE925D 100%);
+    background: -webkit-linear-gradient(top, #F2EDE4 0%, #BE925D 100%);
+    background: linear-gradient(to bottom, #F2EDE4 0%, #BE925D 100%);
+  }
+  
+  .header__navegador--color{
+    color: #f0e0c4;
+  }
+  
+  .header__navegador--colorContactoBackground {
+    background: #F2EDE4;
+    background: -moz-linear-gradient(top, #F2EDE4 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #F2EDE4 0%, #000000 100%);
+    background: linear-gradient(to bottom, #F2EDE4 0%, #000000 100%);
+  }
+  
+  .header__navegador--blogBackground {
+    background: #F2EDE4;
+    background: -moz-linear-gradient(top, #F2EDE4 0%, #66565e 100%);
+    background: -webkit-linear-gradient(top, #F2EDE4 0%, #66565e 100%);
+    background: linear-gradient(to bottom, #F2EDE4 0%, #66565e 100%);
+  }
+  
+  .header__navegador--logoBarba {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 0;
+  }
+  
+  .header__navegador--BarbaWaltzHeader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__navegador--barraNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 89%;
+    align-items: center;
+    padding: 0;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+  }
+
+
+
+  a:link {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightblue;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: white;
+
+  }
+
+  .breadcrumb-item.active {
+    color: $main-color;
+  }
+  
+  article section ul li {
+    list-style-type: none;
+    list-style: none;
+  }
+  
+  img {
+    margin: 20px;
+    padding: 0;
+    border: 0;
+  }
+  
+  .imgSecciones {
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    border: 0;
+  }
+  
+  .parrafoNegrita {
+    font-style: italic;
+    color: #a37a2f;
+    padding: 0;
+    border: 0;
+    margin: 0;
+  
+  }
+
+  .presentacionesAceites {
+    color: #e2bd6d;
+    font-weight: bold;
+  }
+  
+  .backColor {
+    background-color: #F2EDE4;
+  }
+  
+  .parrafoHistoria {
+    color: white;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: normal;
+    padding: 25px;
+  }
+
+  .carousel-item img {
+    max-height: 500px;
+     /* input your desired height here */
+  }
+
+  /* 3.Footer */
+  .footerDisplayFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  
+  }
+  
+  .footerDisplayFlex .item1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  .footerDisplayFlex .item2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 20px;
+    align-items: center;
+  }
+  
+  .footerIndexBackColor {
+    background: #BE925D;
+    background: -moz-linear-gradient(top, #BE925D 0%, #F2EDE4 100%);
+    background: -webkit-linear-gradient(top, #BE925D 0%, #F2EDE4 100%);
+    background: linear-gradient(to bottom, #BE925D 0%, #F2EDE4 100%);
+  }
+  
+  .footerBackColor {
+    background: #000000;
+    background: -moz-linear-gradient(top, #000000 0%, #F2EDE4 100%);
+    background: -webkit-linear-gradient(top, #000000 0%, #F2EDE4 100%);
+    background: linear-gradient(to bottom, #000000 0%, #F2EDE4 100%);
+  }
+  
+  .footerBlogBackColor {
+    background: #66565E;
+    background: -moz-linear-gradient(top, #66565E 0%, #F2EDE4 100%);
+    background: -webkit-linear-gradient(top, #66565E 0%, #F2EDE4 100%);
+    background: linear-gradient(to bottom, #66565E 0%, #F2EDE4 100%);
+  
+  }
+  
+  .parrafoNegritaFooter {
+    font-weight: normal;
+    color: #a37a2f;
+  }
+  
+  .parrafoNegritaFooterWhite {
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+  
+  }
+  
+  /* 3.Footer Fin */
+  
+  /* Version Max480 */
+  
+  @media only screen and (max-width: 480px) {
+    .header__navegador--logoBarba {
+      display: none;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 1.9rem;
+    }
+  
+    .header__navegador--barraNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 99%;
+      align-items: center;
+      padding: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    .imgSecciones {
+      margin-top: 35px;
+    }
+  
+    .gridIndex {
+      grid-template-columns: 1fr;
+      grid-template-rows: 4(1fr);
+      grid-template-areas:
+        "gridIndex1"
+        "gridIndex2"
+        "gridIndex3"
+        "gridIndex4";
+    }
+  
+    .gridIndex1 {
+      grid-area: gridIndex1;
+    }
+  
+    .gridIndex2 {
+      grid-area: gridIndex2;
+    }
+  
+    .gridIndex3 {
+      grid-area: gridIndex3;
+    }
+  
+    .gridIndex4 {
+      grid-area: gridIndex4;
+    }
+  
+    .footerDisplayFlex .item1 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .footerDisplayFlex .item2 {
+      display: none;
+    }
+  
+  }
+  
+  /* Version Max360*/
+  
+  @media only screen and (min-width: 280px) and (max-width: 360px) {
+    .gridIndex {
+      grid-template-columns: 1fr;
+      grid-template-rows: 4(1fr);
+      grid-template-areas:
+        "gridIndex1"
+        "gridIndex2"
+        "gridIndex3"
+        "gridIndex4";
+    }
+  
+    .imgHeight360 {
+      height: 350px;
+  
+    }
+  
+    .gridIndex1 {
+      grid-area: gridIndex1;
+    }
+  
+    .gridIndex2 {
+      grid-area: gridIndex2;
+    }
+  
+    .gridIndex3 {
+      grid-area: gridIndex3;
+    }
+  
+    .gridIndex4 {
+      grid-area: gridIndex4;
+    }
+  
+    a:link {
+      font-size: 1.3rem;
+  
+    }
+  
+  }

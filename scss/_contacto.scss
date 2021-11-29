@@ -1,0 +1,72 @@
+h1.contacto {
+    font-size: 2rem;
+    color: $main-color;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    border: 0;
+    text-align: center;
+  }
+  
+  /* Contaco Page */
+  
+  .mainContacto {
+    background-color: black;
+  }
+  
+  
+  .formContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 750px;
+    align-items: center;
+    color: white;
+    background-color: black
+  }
+  
+  .formInput {
+    text-align: center;
+  }
+  
+  /* FORMULARIO CONTACTO */
+  
+  .gridFormularioContacto {
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". formularioContacto .";
+    align-items: center;
+    justify-items: center;
+  }
+  
+  input:focus {
+    box-shadow: 1px 0 1px #efca89;
+    outline-offset: 1px;
+    outline: 1px solid #efca89;
+  }
+  
+  textarea:focus {
+    box-shadow: 0 0 3px #efca89;
+    outline-offset: 0px;
+    outline: 1px solid #efca89;
+  }
+  
+  select:focus {
+    box-shadow: 0 0 3px #efca89;
+    outline-offset: 0px;
+    outline: 1px solid #efca89;
+  
+  }
+  
+  .formularioContacto {
+    grid-area: formularioContacto;
+    border: #efca89 solid 5px;
+    border-radius: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  /* FORMULARIO CONTACTO FIN */

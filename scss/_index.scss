@@ -1,0 +1,34 @@
+.mainIndex {
+    background-color: #be925d;
+  }
+
+    /* Contenedor Index */
+    .gridIndex {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+      align-items: center;
+      justify-items: center;
+      grid-template-areas: "gridIndex1 gridIndex2""gridIndex3 gridIndex4";
+    
+    }
+    
+    .gridIndex1 {
+      grid-area: gridIndex1;
+    
+    }
+    
+    .gridIndex2 {
+      grid-area: gridIndex2;
+    
+    }
+    
+    .gridIndex3 {
+      grid-area: gridIndex3;
+    
+    }
+    
+    .gridIndex4 {
+      grid-area: gridIndex4;
+    }
