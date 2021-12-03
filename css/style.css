@@ -292,16 +292,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border: 1px solid #efca89;
   border-radius: 3px;
   text-align: center;
-  padding: 80px;
+  padding: 50px;
+  margin: 50px;
 }
 
 .comprarForm {
@@ -312,27 +309,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid #efca89;
   border-radius: 3px;
   text-align: center;
-  padding: 80px;
+  padding: 50px;
+  margin: 30px;
 }
 
 /* EFECTO IMAGEN PRODUCTO */
-.imagenProducto:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  border-radius: 50px;
-  -webkit-filter: sepia(15%);
-          filter: sepia(15%);
-}
-
 .animate__animated.animate_fadeIn {
   --animate-duration: 10s;
 }
@@ -419,8 +408,8 @@ select:focus {
   grid-area: formularioContacto;
   border: #efca89 solid 5px;
   border-radius: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* FORMULARIO CONTACTO FIN */
@@ -870,6 +859,15 @@ img {
   }
   a:link {
     font-size: 1.3rem;
+  }
+  .formularioContacto {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: formularioContacto;
+    border: #efca89 solid 2px;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -178,35 +178,31 @@ $coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
     color: $main-color;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
     border: 1px solid #efca89;
     border-radius: 3px;
     text-align: center;
-    padding: 80px;
+    padding: 50px;
+    margin: 50px;
   }
 
 
   .comprarForm {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid #efca89;
     border-radius: 3px;
     text-align: center;
-    padding: 80px;
+    padding: 50px;
+    margin: 30px;
   }
 
 
 
   /* EFECTO IMAGEN PRODUCTO */
 
-  .imagenProducto:hover {
-    transform: scale(1.15);
-    border-radius: 50px;
-    filter: sepia(15%);
-  }
 
   .animate__animated.animate_fadeIn {
     --animate-duration: 10s;
