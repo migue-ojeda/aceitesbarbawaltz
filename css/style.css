@@ -370,8 +370,8 @@ h1.contacto {
 .gridFormularioContacto {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 90% auto;
-      grid-template-columns: auto 90% auto;
+  -ms-grid-columns: auto 80% auto;
+      grid-template-columns: auto 80% auto;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: ". formularioContacto .";
