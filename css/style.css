@@ -823,6 +823,15 @@ img {
   .footerDisplayFlex .item2 {
     display: none;
   }
+  .formularioContacto {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: formularioContacto;
+    border: #efca89 solid 1px;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 /* Version Max360*/
@@ -864,7 +873,7 @@ img {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: formularioContacto;
-    border: #efca89 solid 2px;
+    border: #efca89 solid 1px;
     border-radius: 3px;
     padding-left: 0px;
     padding-right: 0px;
