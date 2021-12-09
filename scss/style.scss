@@ -5,7 +5,7 @@
 @import "barba-waltz";
 
 
-$main-color: #f0e0c4;
+$main-color: #3F220F;
 
 * {
     box-sizing: border-box;
@@ -17,48 +17,48 @@ html {
 
     body {
         font-size: 1.6rem;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-family: 'Gothic A1', sans-serif;
         margin: 0;
         padding: 0;
         border: 0;
 
         h1 {
             color: $main-color;
-            font-weight: bold;
-            font-size: 3.0rem;
+            font-weight: 700;
+            font-size: 2.3rem;
             font-style: normal;
             text-align: center;
             margin: 0;
-            padding: 20px;
-            border: 0;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 0;          
           }
 
           h2 {
             color: $main-color;
-            font-weight: bold;
+            font-weight: medium 500;
+            font-size: 2.0rem;
             font-style: normal;
             text-align: center;
             margin: 2px;
             padding: 20px;
             border: 0;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
           }
           
           
           h3 {
             color: $main-color;
             font-style: oblique;
-            font-weight: normal;
+            font-weight: 300;
+            font-size: 1.8rem;
             margin: 0px;
             padding: 20px;
             border: 0;
             text-align: center;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
           }
           
           h4 {
-            color: #6B8153;
+            color: $main-color;
             font-style: italic;
             font-weight: normal;
             font-size: 2.0rem;
@@ -70,32 +70,40 @@ html {
 
 }
 
+p{
+  color: $main-color;
+}
+
 nav ul li {
     list-style: none;
     font-size: 1.6rem;
     color: white;
+    font-weight: 300;
+
+    a{
+      color: #ebf3ec;
+    }
   }
 
   .header__navegador--font{  list-style: none;
     font-size: 1.6rem;
-    color: white;}
+    color: #eacfbe !important}
   
   
-  .header__navegador {
+  .header__navegador{
     display: flex;
     flex-direction: row;
     width: 100vw;
     position: fixed;
     z-index: 100;
-    background: #F2EDE4;
-    background: -moz-linear-gradient(top, #F2EDE4 0%, #BE925D 100%);
-    background: -webkit-linear-gradient(top, #F2EDE4 0%, #BE925D 100%);
-    background: linear-gradient(to bottom, #F2EDE4 0%, #BE925D 100%);
+    background: #566641;
   }
   
-  .header__navegador--color{
-    color: #f0e0c4;
+  .header__padding{
+    padding-left: 70px;
+    padding-right: 60px;
   }
+
   
   .header__navegador--colorContactoBackground {
     background: #F2EDE4;
@@ -117,6 +125,7 @@ nav ul li {
     margin-bottom: 2px;
     margin-top: 2px;
     margin-right: 0;
+    height: 60px;
   }
   
   .header__navegador--BarbaWaltzHeader {
@@ -138,28 +147,39 @@ nav ul li {
   
   }
 
-  
+ .carouselMargin{
+   padding-top: 50px;
+ }
+
+nav ol li a{
+  color: $main-color;
+}
+
+nav ol li a:hover{
+  color: gray;
+}
 
   a:link {
     text-decoration: none;
     color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
   }
-  
-  /* visited link */
-  a:visited {
-    color: white;
-  }
+
   
   /* mouse over link */
   a:hover {
-    color: lightblue;
+ 
+    color: lightgray;
   }
   
   /* selected link */
   a:active {
-    color: blue;
+    color: lightsteelblue;
   }
+
+  .currentLink {
+    text-decoration: underline !important;
+  ;
+ }
 
   .breadcrumb-item + .breadcrumb-item::before {
     color: white;
@@ -202,9 +222,6 @@ nav ul li {
     font-weight: bold;
   }
   
-  .backColor {
-    background-color: #F2EDE4;
-  }
   
   .parrafoHistoria {
     color: white;
@@ -230,26 +247,27 @@ nav ul li {
   
   .footerDisplayFlex .item1 {
     display: flex;
-    justify-content: flex-start;
-    width: 50%;
+    justify-content: space-evenly;
+    width: 33%;
     align-items: center;
     padding-top: 10px;
   }
   
   .footerDisplayFlex .item2 {
     display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    padding-right: 20px;
+    justify-content: center;
+    width: 33%;
+    padding-right: 100px;
+    padding-top: 15px;
     align-items: center;
   }
+
   
   .footerIndexBackColor {
-    background: #BE925D;
-    background: -moz-linear-gradient(top, #BE925D 0%, #F2EDE4 100%);
-    background: -webkit-linear-gradient(top, #BE925D 0%, #F2EDE4 100%);
-    background: linear-gradient(to bottom, #BE925D 0%, #F2EDE4 100%);
+    background:#566641;
   }
+
+
   
   .footerBackColor {
     background: #000000;
@@ -272,21 +290,36 @@ nav ul li {
   }
   
   .parrafoNegritaFooterWhite {
-    font-weight: normal;
+    font-weight: 100;
+    font-size: 2.0rem;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
-  
+  }
+
+  .parrafoNegritaFooterWhite2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
   }
   
   /* 3.Footer Fin */
   
-  /* Version Max480 */
+  /* Version Max576 */
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 576px) {
+
     .header__navegador--logoBarba {
-      display: none;
+      display: flex;
+      align-items: center;
+      height: 40px;
     }
   
+    .carouselMargin{
+      padding-top: 32px;
+    }
+   
+
     h1 {
       text-align: center;
       font-size: 1.9rem;
@@ -344,6 +377,9 @@ nav ul li {
     .footerDisplayFlex .item2 {
       display: none;
     }
+
+
+
     .formularioContacto {
       grid-area: formularioContacto;
       border: #efca89 solid 1px;
@@ -354,9 +390,14 @@ nav ul li {
 
   }
   
-  /* Version Max360*/
+  /* Version Min 576 Max992*/
   
-  @media only screen and (min-width: 280px) and (max-width: 360px) {
+  @media only screen and (min-width: 576px) and (max-width: 992px) {
+    
+    .footerDisplayFlex .item3 {
+      display: none;
+      }
+
     .gridIndex {
       grid-template-columns: 1fr;
       grid-template-rows: 4(1fr);

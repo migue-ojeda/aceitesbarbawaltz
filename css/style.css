@@ -1,5 +1,20 @@
 .mainIndex {
-  background-color: #be925d;
+  background-color: #ebf3ec;
+}
+
+h2.carouselTitleFont {
+  color: whitesmoke;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+}
+
+.opacity {
+  background: rgba(179, 180, 180, 0.5);
+  width: 100%;
+}
+
+.divIndex {
+  padding: 65px;
 }
 
 /* Contenedor Index */
@@ -46,9 +61,20 @@
   background-color: #66565e;
 }
 
+.containerImg {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.imagenProductoBlog {
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 .imagenProductoBlog:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* TIENDA */
@@ -145,24 +171,61 @@
 .btn--Silvestre {
   background-color: #9FBB71;
   color: white;
+  text-shadow: 2px 1px 3px #000000;
+  padding: 5px 50px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn--Dulce {
   background-color: #5849BF;
   color: white;
+  text-shadow: 2px 1px 3px #000000;
+  padding: 5px 50px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn--Fresco {
   background-color: #04BFBF;
   color: white;
+  text-shadow: 2px 1px 3px #000000;
+  padding: 5px 50px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn--Oriental {
   background-color: #D6AE70;
   color: white;
+  text-shadow: 2px 1px 3px #000000;
+  padding: 5px 50px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 /* MAPA FIN */
+.parrafoTienda {
+  text-align: center;
+  padding: 20px;
+}
+
 .gridProductos1 {
   display: -ms-grid;
   display: grid;
@@ -381,13 +444,6 @@ h1.contacto {
   justify-items: center;
 }
 
-input:focus {
-  -webkit-box-shadow: 1px 0 1px #efca89;
-          box-shadow: 1px 0 1px #efca89;
-  outline-offset: 1px;
-  outline: 1px solid #efca89;
-}
-
 textarea:focus {
   -webkit-box-shadow: 0 0 3px #efca89;
           box-shadow: 0 0 3px #efca89;
@@ -459,53 +515,53 @@ ul.listaBarbaPage {
 
 html {
   font-size: 62.5%;
-  color: #f0e0c4;
+  color: #3F220F;
 }
 
 html body {
   font-size: 1.6rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
 html body h1 {
-  color: #f0e0c4;
-  font-weight: bold;
-  font-size: 3.0rem;
+  color: #3F220F;
+  font-weight: 700;
+  font-size: 2.3rem;
   font-style: normal;
   text-align: center;
   margin: 0;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: 0;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
 }
 
 html body h2 {
-  color: #f0e0c4;
-  font-weight: bold;
+  color: #3F220F;
+  font-weight: medium 500;
+  font-size: 2.0rem;
   font-style: normal;
   text-align: center;
   margin: 2px;
   padding: 20px;
   border: 0;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
 }
 
 html body h3 {
-  color: #f0e0c4;
+  color: #3F220F;
   font-style: oblique;
-  font-weight: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
   margin: 0px;
   padding: 20px;
   border: 0;
   text-align: center;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
 }
 
 html body h4 {
-  color: #6B8153;
+  color: #3F220F;
   font-style: italic;
   font-weight: normal;
   font-size: 2.0rem;
@@ -514,16 +570,25 @@ html body h4 {
   border: 0;
 }
 
+p {
+  color: #3F220F;
+}
+
 nav ul li {
   list-style: none;
   font-size: 1.6rem;
   color: white;
+  font-weight: 300;
+}
+
+nav ul li a {
+  color: #ebf3ec;
 }
 
 .header__navegador--font {
   list-style: none;
   font-size: 1.6rem;
-  color: white;
+  color: #eacfbe !important;
 }
 
 .header__navegador {
@@ -537,13 +602,12 @@ nav ul li {
   width: 100vw;
   position: fixed;
   z-index: 100;
-  background: #F2EDE4;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE4), to(#BE925D));
-  background: linear-gradient(to bottom, #F2EDE4 0%, #BE925D 100%);
+  background: #566641;
 }
 
-.header__navegador--color {
-  color: #f0e0c4;
+.header__padding {
+  padding-left: 70px;
+  padding-right: 60px;
 }
 
 .header__navegador--colorContactoBackground {
@@ -568,6 +632,7 @@ nav ul li {
   margin-bottom: 2px;
   margin-top: 2px;
   margin-right: 0;
+  height: 60px;
 }
 
 .header__navegador--BarbaWaltzHeader {
@@ -601,25 +666,35 @@ nav ul li {
   margin-bottom: 0;
 }
 
-a:link {
-  text-decoration: none;
-  color: white;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+.carouselMargin {
+  padding-top: 50px;
 }
 
-/* visited link */
-a:visited {
+nav ol li a {
+  color: #3F220F;
+}
+
+nav ol li a:hover {
+  color: gray;
+}
+
+a:link {
+  text-decoration: none;
   color: white;
 }
 
 /* mouse over link */
 a:hover {
-  color: lightblue;
+  color: lightgray;
 }
 
 /* selected link */
 a:active {
-  color: blue;
+  color: lightsteelblue;
+}
+
+.currentLink {
+  text-decoration: underline !important;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -627,7 +702,7 @@ a:active {
 }
 
 .breadcrumb-item.active {
-  color: #f0e0c4;
+  color: #3F220F;
 }
 
 article section ul li {
@@ -659,10 +734,6 @@ img {
 .presentacionesAceites {
   color: #e2bd6d;
   font-weight: bold;
-}
-
-.backColor {
-  background-color: #F2EDE4;
 }
 
 .parrafoHistoria {
@@ -697,10 +768,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 50%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 33%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -711,20 +782,19 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 50%;
-  padding-right: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 33%;
+  padding-right: 100px;
+  padding-top: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .footerIndexBackColor {
-  background: #BE925D;
-  background: -webkit-gradient(linear, left top, left bottom, from(#BE925D), to(#F2EDE4));
-  background: linear-gradient(to bottom, #BE925D 0%, #F2EDE4 100%);
+  background: #566641;
 }
 
 .footerBackColor {
@@ -745,16 +815,33 @@ img {
 }
 
 .parrafoNegritaFooterWhite {
-  font-weight: normal;
+  font-weight: 100;
+  font-size: 2.0rem;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
+}
+
+.parrafoNegritaFooterWhite2 {
+  font-weight: 300;
+  font-size: 1.5rem;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
 }
 
 /* 3.Footer Fin */
-/* Version Max480 */
-@media only screen and (max-width: 480px) {
+/* Version Max576 */
+@media only screen and (max-width: 576px) {
   .header__navegador--logoBarba {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
+  }
+  .carouselMargin {
+    padding-top: 32px;
   }
   h1 {
     text-align: center;
@@ -834,8 +921,11 @@ img {
   }
 }
 
-/* Version Max360*/
-@media only screen and (min-width: 280px) and (max-width: 360px) {
+/* Version Min 576 Max992*/
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .footerDisplayFlex .item3 {
+    display: none;
+  }
   .gridIndex {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

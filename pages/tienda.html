@@ -18,331 +18,149 @@
 </head>
 
 <body>
-    <header class="backColor">
 
+    <header>
 
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light header__navegador p-0 header__navegador--colorContactoBackground">
-            <div class="container-fluid p-0">
-                <a href="index.html"><img src="../images/logo blanco shadow min.png" title="Ir al inicio" alt="logo Barba Waltz"
-                    height="60" class="header__navegador--logoBarba"></a>
-                    
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-
-                <div class="collapse navbar-collapse ms-3"  id="navbarNav">
-                    <ul class="navbar-nav d-flex justify-content-around w-100">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="tienda.html">Tienda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="barba_waltz.html">Barba Waltz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="barba_blog.html">Barba Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark header__navegador p-2 navbar-text .header__navegador--font">
+          <div class="container-fluid header__padding">
+            <a href="index.html"><img src="../images/logo blanco letras.png" title="Ir al inicio" alt="logo Barba Waltz"
+               class="header__navegador--logoBarba"></a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse ms-3 nav" id="navbarNav">
+              <ul class="navbar-nav d-flex justify-content-around w-100">
+                <li class="nav-item ">
+                  <a aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class=" currentLink" href="tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="barba_waltz.html">Barba Waltz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="barba_blog.html">Barba Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
-    </header>
-
-
-    <main class="mainContacto">
-        <img src="../images/tienda1.min.jpg" title="Tienda" alt=" Header Tienda Barba Waltz" width="100%"
-            class="imgSecciones animate__animated animate__fadeIn">
-
-        <!-- BREADCRUMB --------------------------------------------------------------------------------------------->
-
-        <nav aria-label="breadcrumb ">
-            <ol class="breadcrumb mt-3 ms-5">
-                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Tienda</li>
-            </ol>
-        </nav>
-
-        <h1 class="animate__animated animate__fadeIn">Nuestros Productos</h1>
-
-        <h2> Aceites para Barba</h2>
+      </header>
 
         <!-- AQUÍ VAN LOS PRODUCTOS ----------------------------------------------------------------------------------------------------------------------------->
 
-        <!-- ACEITE BOSQUE SILVESTRE ----------------------------------------------------------------------------------------------------------------------------->
-
-        <h3>Aceite <span class="fuente-Silvestre"> Bosque Silvestre</span></h3>
-
-        <div class="container">
-            <div class="row">
-                <div class="d-md-flex justify-content-evenly align-items-center" data-aos="fade-right"
-                    data-aos-offset="300" data-aos-easing="ease-in-sine">
-
-
-                    <!-- Caja Imágenes ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="d-flex justify-content-center align-items-center">
-
-                            <img src="../images/aBosqueSilvestre20.min.JPG"
-                                alt="Aceite para barba Bosque Silvestre 20ml" height="350px"
-                                class="imagen1 imagenProducto">
-                        </div>
-                    </div>
-
-
-                    <!-- Caja Descripción del Producto ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class=" col-lg-4 col-md-4 col-12">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <ul class="lista1 cajaDescripcionAceites"> Composición:<br><br>
-                                <li>Aceite de Lavanda</li>
-                                <li>Aceite de Vainilla</li>
-                                <li>Aceite de Coco</li>
-                                <li>Aceite de Violeta</li>
-                                <li>Aceite de Ricino</li>
-                                <li>Aceite de Almendras</li>
-                                <li>Vitamina E</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <!-- Aqúi van los botones de compra ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="d-flex align-items-center">
-                            <form action="#" method="post" class="comprarForm compra1 fuente-main">
-
-                                <label for="name">Cantidad:
-
-                                    <input type="number" name="cantidad" min="0" max="999" value="0"></label>
-
-                                <label for="Tamaño">Tamaño:
-
-                                    <select name="Tamaño">
-                                        <option value="10ml">10ml</option>
-                                        <option value="20ml">20ml</option>
-                                        <option value="30ml">30ml</option>
-                                    </select></label>
-
-                                <input type="submit" value="Comprar" class="btn--Silvestre">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-
-
-
-        <!-- ACEITE BOSQUE DULCE ----------------------------------------------------------------------------------------------------------------------------->
-
-        <h3>Aceite <span class="fuente-Dulce"> Bosque Dulce </span></h3>
-
-        <div class="container">
-            <div class="row">
-                <div class="d-md-flex justify-content-evenly align-items-center" data-aos="fade-right"
-                    data-aos-offset="300" data-aos-easing="ease-in-sine">
-
-                    <!-- Caja Imágenes ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="d-flex justify-content-center align-items-center">
-
-                            <img src="../images/aBosqueDulce20.min.JPG" alt="Aceite para barba Bosque Silvestre 20ml"
-                                height="350px" class="imagen1 imagenProducto">
-                        </div>
-                    </div>
-
-                    <!-- Caja Descripción del Producto ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class=" col-lg-4 col-md-4 col-12">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <ul class="lista2 cajaDescripcionAceites"> Composición:<br><br>
-                                <li>Aceite de Sándalo</li>
-                                <li>Aceite de Vainilla</li>
-                                <li>Aceite de Palo</li>
-                                <li>Aceite de Canela</li>
-                                <li>Aceite de Bergamota</li>
-                                <li>Aceite de Ricino</li>
-                                <li>Aceite de Almendras</li>
-                                <li>Vitamina E</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Aqúi van los botones de compra ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="d-flex align-items-center">
-                            <form action="#" method="post" class="comprarForm compra2 fuente-main">
-
-                                <label for="name">Cantidad:
-
-                                    <input type="number" name="cantidad" min="0" max="999" value="0"></label>
-
-                                <label for="Tamaño">Tamaño:
-
-                                    <select name="Tamaño">
-                                        <option value="10ml">10ml</option>
-                                        <option value="20ml">20ml</option>
-                                        <option value="30ml">30ml</option>
-                                    </select></label>
-
-                                <input type="submit" value="Comprar" class="btn--Dulce">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- ACEITE BOSQUE FRESCO ----------------------------------------------------------------------------------------------------------------------------->
 
-        <h3>Aceite <span class="fuente-Fresco">Bosque Fresco</span></h3>
+        <main class="mainIndex">
+            
+        <!-- BREADCRUMB --------------------------------------------------------------------------------------------->
 
-        <div class="container">
-            <div class="row">
-                <div class="d-md-flex justify-content-evenly align-items-center" data-aos="fade-right"
-                    data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb mt-3 ms-5">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active currentLink" aria-current="page">Tienda</li>
+                </ol>
+            </nav>
 
-                    <!-- Caja Imágenes ----------------------------------------------------------------------------------------------------------------------------->
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="d-flex justify-content-center align-items-center">
+            <!-- SECCIÓN DE PRODUCTOS TIENDA ----------------------------------------------------------------------------------------------------------------------------->
+        
+            <div class="divIndex">
+            <h1>PRODUCTOS</h1>
+            <h2>Aceites Para Barba</h2>
 
-                            <img src="../images/aBosqueFresco20.min.JPG" alt="Aceite para barba Bosque Silvestre 20ml"
-                                height="350px" class="imagen1 imagenProducto">
-                        </div>
+                        <!-- BOSQUE SILVESTRE ----------------------------------------->
+
+                        <h3>Aceite Bosque Silvestre</h3>
+        
+                        <p class="parrafoTienda">Posee aceite de coco, violeta, vainilla, lavanda, aceite de almendras, aceite ricino y aceite de vitamina E. Su aroma es fresco y juvenil. </p>
+            <div class="container w-100">
+              <div class="row">
+        
+                <!-- IMAGEN 10ML ----------------------------------------->
+                <div class="col-12 col-md-12 col-lg-4">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div>
+                      <img src="../images/tBosqueSilvestre10.jpg" alt="Aceite para barba Bosque Silvestre 10ml" width="300px"
+                        class="imagenProductoBlog">
+                      <p class=" d-flex justify-content-center align-items-center">Aceite de 10ml</p>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <input type="submit" value="Agregar al carrito" class="btn--Silvestre"></div>
                     </div>
-
-                    <!-- Caja Descripción del Producto ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class=" col-lg-4 col-md-4 col-12">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <ul class="lista3 cajaDescripcionAceites"> Composición:<br><br>
-                                <li>Aceite de Hierbabuena</li>
-                                <li>Aceite de Romero</li>
-                                <li>Aceite de Palo</li>
-                                <li>Aceite de Ricino</li>
-                                <li>Aceite de Almendras</li>
-                                <li>Vitamina E</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Aqúi van los botones de compra ----------------------------------------------------------------------------------------------------------------------------->
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="d-flex align-items-center">
-                            <form action="#" method="post" class="comprarForm compra3 fuente-main">
-
-                                <label for="name">Cantidad:
-
-                                    <input type="number" name="cantidad" min="0" max="999" value="0"></label>
-
-                                <label for="Tamaño">Tamaño:
-
-                                    <select name="Tamaño">
-                                        <option value="10ml">10ml</option>
-                                        <option value="20ml">20ml</option>
-                                        <option value="30ml">30ml</option>
-                                    </select></label>
-
-                                <input type="submit" value="Comprar" class="btn--Fresco">
-                            </form>
-                        </div>
-                    </div>
-
+                  </div>
                 </div>
-            </div>
-        </div>
+        
+                <!-- IMAGEN 20ML ----------------------------------------->
+                <div class="col-12 col-md-12 col-lg-4">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div><img src="../images/tBosqueSilvestre20.jpg" alt="Aceite para barba Bosque Silvestre 20ml" width="300px"
+                        class="imagenProductoBlog">
+                      <p class=" d-flex justify-content-center align-items-center">Aceite de 20ml</p>
+                      <div class="d-flex justify-content-center align-items-center">
 
-        <!-- ACEITE BOSQUE ORIENTAL ----------------------------------------------------------------------------------------------------------------------------->
+                        <form action="#" method="post" class="comprarForm">
 
-        <h3>Aceite <span class="fuente-Oriental"> Bosque Oriental </span></h3>
+                            <label for="name">Cantidad:
+        
+                                <input type="number" name="cantidad" min="0" max="999" value="0"></label>
+        
+                            <label for="Tamaño">Tamaño:
+        
+                                <select name="Tamaño">
+                                    <option value="10ml">10ml</option>
+                                    <option value="20ml">20ml</option>
+                                    <option value="30ml">30ml</option>
+                                </select></label>
 
-        <div class="container">
-            <div class="row">
-                <div class="d-md-flex justify-content-evenly align-items-center" data-aos="fade-right"
-                    data-aos-offset="300" data-aos-easing="ease-in-sine">
-
-                    <!-- Caja Imágenes ----------------------------------------------------------------------------------------------------------------------------->
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="d-flex justify-content-center align-items-center">
-
-                            <img src="../images/aBosqueOriental20.min.JPG" alt="Aceite para barba Bosque Silvestre 20ml"
-                                height="350px" class="imagen1 imagenProducto">
-                        </div>
+                        <input type="submit" value="Agregar al carrito" class="btn--Silvestre"></div>
                     </div>
-                    <!-- Caja Descripción del Producto ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class=" col-lg-4 col-md-4 col-12">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <ul class="lista4 cajaDescripcionAceites"> Composición:<br><br>
-                                <li>Aceite de Vetiver</li>
-                                <li>Aceite de Sándalo</li>
-                                <li>Aceite de Bergamota</li>
-                                <li>Aceite de Lavanda</li>
-                                <li>Aceite de Naranja</li>
-                                <li>Aceite de Ricino</li>
-                                <li>Aceite de Almendras</li>
-                                <li>Vitamina E</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Aqúi van los botones de compra ----------------------------------------------------------------------------------------------------------------------------->
-
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="d-flex align-items-center">
-                            <form action="#" method="post" class="comprarForm compra4 fuente-main">
-
-                                <label for="name">Cantidad:
-
-                                    <input type="number" name="cantidad" min="0" max="999" value="0"></label>
-
-                                <label for="Tamaño">Tamaño:
-
-                                    <select name="Tamaño">
-                                        <option value="10ml">10ml</option>
-                                        <option value="20ml">20ml</option>
-                                        <option value="30ml">30ml</option>
-                                    </select></label>
-
-                                <input type="submit" value="Comprar" class="btn--Oriental">
-                            </form>
-                        </div>
-                    </div>
-
+                  </div>
                 </div>
+        
+                <!-- IMAGEN 30ML ----------------------------------------->
+                <div class="col-12 col-md-12 col-lg-4">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div><img src="../images/tBosqueSilvestre30.jpg" alt="Aceite para barba Bosque Silvestre 30ml" width="300px"
+                        class="imagenProductoBlog">
+                      <p class=" d-flex justify-content-center align-items-center">Aceite de 30ml</p>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <input type="submit" value="Agregar al carrito" class="btn--Silvestre"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
             </div>
-        </div>
+            </div>
+          </div>
+          </main>
 
-    </main>
+  <!-- FOOTER ----------------------------------------------------------------------------------------------------------------------------->
 
-    <footer class="footerBackColor footerDisplayFlex">
+    <footer class="footerIndexBackColor footerDisplayFlex">
+
         <div class="item1">
-            <a href="https://www.facebook.com/BarbaWaltz" target="_blank"><img src="../images/facebook_white_24.png"
-                    title="Facebook" alt="facebook logo" /></a>
-            <a href="https://www.instagram.com/barbawaltz/" target="_blank"><img src="../images/instagram_white_24.png"
-                    title="instagram" alt="instagram logo" /></a>
-            <a href="https://twitter.com/BarbaWaltz" target="_blank"><img src="../images/twitter_white_24.png"
-                    title="Twitter" alt="twitter logo" /></a>
-            <a href="mailto: waltz.barba@gmail.com" target="_blank"><img src="../images/mail_white_24.png"
-                    title="Email Barba Waltz" alt="email logo" /></a>
+          <a href="https://www.facebook.com/BarbaWaltz" target="_blank"><img src="../images/facebook_white_24.png"
+              title="Facebook" alt="facebook logo" /></a>
+          <a href="https://www.instagram.com/barbawaltz/" target="_blank"><img src="../images/instagram_white_24.png"
+              title="instagram" alt="instagram logo" /></a>
+          <a href="https://twitter.com/BarbaWaltz" target="_blank"><img src="../images/twitter_white_24.png" title="Twitter"
+              alt="twitter logo" /></a>
+          <a href="mailto: waltz.barba@gmail.com" target="_blank"><img src="../images/mail_white_24.png"
+              title="Email Barba Waltz" alt="email logo" /></a>
         </div>
+    
+    
         <div class="item2">
-            <p class="parrafoNegritaFooterWhite">#PorAmorALaBarba</p>
+          <p class="parrafoNegritaFooterWhite"> #PorAmorALaBarba</p>
         </div>
-    </footer>
+      </footer>
 
 <!-- SCRIPT -------------------------------------------------------------------------------------------->
 

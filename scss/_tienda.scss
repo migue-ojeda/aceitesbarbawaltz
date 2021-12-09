@@ -87,10 +87,23 @@ $coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
     .btn--#{$red} {
       background-color: $sucolor;
       color: white;
+      text-shadow: 2px 1px 3px #000000;
+      padding: 5px 50px;
+      border-radius: 10px;
+      outline: none;
+      cursor: pointer;
+      border-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
     }
   }
 
   /* MAPA FIN */
+
+.parrafoTienda{
+  text-align: center;
+  padding: 20px; 
+}
 
   .gridProductos1 {
     @include gridProductos;
