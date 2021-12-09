@@ -1,5 +1,5 @@
 .mainIndex {
-  background-color: #ebf3ec;
+  background-color: #26362d;
 }
 
 h2.carouselTitleFont {
@@ -79,7 +79,7 @@ h2.carouselTitleFont {
 
 /* TIENDA */
 .fuente-main {
-  color: #f0e0c4;
+  color: whitesmoke;
 }
 
 /* Producto 1 */
@@ -170,8 +170,7 @@ h2.carouselTitleFont {
 
 .btn--Silvestre {
   background-color: #9FBB71;
-  color: white;
-  text-shadow: 2px 1px 3px #000000;
+  color: #26362d;
   padding: 5px 50px;
   border-radius: 10px;
   outline: none;
@@ -183,8 +182,7 @@ h2.carouselTitleFont {
 
 .btn--Dulce {
   background-color: #5849BF;
-  color: white;
-  text-shadow: 2px 1px 3px #000000;
+  color: #26362d;
   padding: 5px 50px;
   border-radius: 10px;
   outline: none;
@@ -196,8 +194,7 @@ h2.carouselTitleFont {
 
 .btn--Fresco {
   background-color: #04BFBF;
-  color: white;
-  text-shadow: 2px 1px 3px #000000;
+  color: #26362d;
   padding: 5px 50px;
   border-radius: 10px;
   outline: none;
@@ -209,8 +206,7 @@ h2.carouselTitleFont {
 
 .btn--Oriental {
   background-color: #D6AE70;
-  color: white;
-  text-shadow: 2px 1px 3px #000000;
+  color: #26362d;
   padding: 5px 50px;
   border-radius: 10px;
   outline: none;
@@ -220,10 +216,24 @@ h2.carouselTitleFont {
   box-shadow: none;
 }
 
+.btn--Silvestre:hover {
+  background-color: #81975d;
+}
+
+.btn--Silvestre__enTienda {
+  padding: 1px 20px;
+  font-size: 1.5rem;
+}
+
 /* MAPA FIN */
 .parrafoTienda {
-  text-align: center;
-  padding: 20px;
+  font-size: 1.3rem;
+}
+
+h4.tienda4 {
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 18px 0px;
 }
 
 .gridProductos1 {
@@ -347,7 +357,7 @@ h2.carouselTitleFont {
 
 .cajaDescripcionAceites {
   list-style-type: none;
-  color: #f0e0c4;
+  color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,9 +399,61 @@ h2.carouselTitleFont {
   --animate-duration: 10s;
 }
 
+.carousel-control-prev {
+  width: 15px;
+  left: 0;
+}
+
+.carousel-control-next {
+  width: 15px;
+  right: 20px;
+}
+
+/* CARRITO COMPRAS */
+.carrito {
+  padding-top: 60px;
+}
+
+.selectTiendaText {
+  font-size: 1.3rem;
+  color: whitesmoke;
+}
+
+.selectTienda {
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.labelTienda {
+  margin: 15px 20px;
+}
+
+.labelTiendaO {
+  margin: 7px 20px;
+}
+
+.titulosTienda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 75px;
+}
+
+.containerTop {
+  padding-top: 40px;
+}
+
+.containerBorder2 {
+  border-right: whitesmoke solid 1px;
+  color: white;
+}
+
 h1.contacto {
   font-size: 2rem;
-  color: #f0e0c4;
+  color: whitesmoke;
   font-weight: bold;
   font-style: normal;
   margin: 0;
@@ -445,17 +507,24 @@ h1.contacto {
 }
 
 textarea:focus {
-  -webkit-box-shadow: 0 0 3px #efca89;
-          box-shadow: 0 0 3px #efca89;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline-offset: 0px;
-  outline: 1px solid #efca89;
+  outline: none;
 }
 
 select:focus {
-  -webkit-box-shadow: 0 0 3px #efca89;
-          box-shadow: 0 0 3px #efca89;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline-offset: 0px;
-  outline: 1px solid #efca89;
+  outline: none;
+}
+
+input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline-offset: 0px;
+  outline: none;
 }
 
 .formularioContacto {
@@ -515,7 +584,7 @@ ul.listaBarbaPage {
 
 html {
   font-size: 62.5%;
-  color: #3F220F;
+  color: whitesmoke;
 }
 
 html body {
@@ -527,7 +596,7 @@ html body {
 }
 
 html body h1 {
-  color: #3F220F;
+  color: whitesmoke;
   font-weight: 700;
   font-size: 2.3rem;
   font-style: normal;
@@ -539,7 +608,7 @@ html body h1 {
 }
 
 html body h2 {
-  color: #3F220F;
+  color: whitesmoke;
   font-weight: medium 500;
   font-size: 2.0rem;
   font-style: normal;
@@ -550,7 +619,7 @@ html body h2 {
 }
 
 html body h3 {
-  color: #3F220F;
+  color: whitesmoke;
   font-style: oblique;
   font-weight: 300;
   font-size: 1.8rem;
@@ -561,7 +630,7 @@ html body h3 {
 }
 
 html body h4 {
-  color: #3F220F;
+  color: whitesmoke;
   font-style: italic;
   font-weight: normal;
   font-size: 2.0rem;
@@ -571,7 +640,7 @@ html body h4 {
 }
 
 p {
-  color: #3F220F;
+  color: whitesmoke;
 }
 
 nav ul li {
@@ -666,12 +735,16 @@ nav ul li a {
   margin-bottom: 0;
 }
 
+.breadcrumbMargin {
+  padding-top: 25px;
+}
+
 .carouselMargin {
   padding-top: 50px;
 }
 
 nav ol li a {
-  color: #3F220F;
+  color: whitesmoke;
 }
 
 nav ol li a:hover {
@@ -702,7 +775,7 @@ a:active {
 }
 
 .breadcrumb-item.active {
-  color: #3F220F;
+  color: whitesmoke;
 }
 
 article section ul li {

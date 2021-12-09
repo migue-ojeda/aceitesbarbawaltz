@@ -5,7 +5,7 @@ $Oriental:#D6AE70;
  
 
  /* TIENDA */
-  $main-color: #f0e0c4;
+  $main-color: whitesmoke;
 
   .fuente-main{
     color: $main-color;
@@ -86,8 +86,7 @@ $coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
   @each $red, $sucolor in $colors-Compra {
     .btn--#{$red} {
       background-color: $sucolor;
-      color: white;
-      text-shadow: 2px 1px 3px #000000;
+      color: #26362d;
       padding: 5px 50px;
       border-radius: 10px;
       outline: none;
@@ -98,11 +97,26 @@ $coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
     }
   }
 
+  .btn--Silvestre:hover{
+    background-color: #81975d;
+  }
+
+  .btn--Silvestre__enTienda{
+    padding: 1px 20px;
+    font-size: 1.5rem;
+
+  }
+
   /* MAPA FIN */
 
 .parrafoTienda{
-  text-align: center;
-  padding: 20px; 
+  font-size: 1.3rem; 
+}
+
+h4.tienda4{
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 18px 0px;
 }
 
   .gridProductos1 {
@@ -220,3 +234,54 @@ $coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
   .animate__animated.animate_fadeIn {
     --animate-duration: 10s;
   };
+
+  .carousel-control-prev
+{
+    width: 15px;
+    left: 0;
+}
+    
+.carousel-control-next
+{
+    width: 15px;
+    right: 20px;
+}
+/* CARRITO COMPRAS */
+
+.carrito{
+  padding-top: 60px;
+}
+
+.selectTiendaText{
+  font-size: 1.3rem;
+  color: $main-color;
+}
+
+.selectTienda{
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.labelTienda{
+  margin: 15px 20px;
+}
+
+.labelTiendaO{
+  margin: 7px 20px;
+}
+
+.titulosTienda{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 75px;
+}
+
+.containerTop{
+  padding-top: 40px;
+}
+
+
+.containerBorder2{
+  border-right: whitesmoke solid 1px;
+  color: white;
+}

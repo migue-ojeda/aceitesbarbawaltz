@@ -5,7 +5,7 @@
 @import "barba-waltz";
 
 
-$main-color: #3F220F;
+$main-color: whitesmoke;
 
 * {
     box-sizing: border-box;
@@ -146,6 +146,10 @@ nav ul li {
     margin-bottom: 0;
   
   }
+
+.breadcrumbMargin{
+  padding-top: 25px;
+}
 
  .carouselMargin{
    padding-top: 50px;

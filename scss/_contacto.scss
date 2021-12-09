@@ -45,18 +45,25 @@ h1.contacto {
 
   
   textarea:focus {
-    box-shadow: 0 0 3px #efca89;
+    box-shadow: none;
     outline-offset: 0px;
-    outline: 1px solid #efca89;
+    outline: none;
   }
   
   select:focus {
-    box-shadow: 0 0 3px #efca89;
+    box-shadow: none;
     outline-offset: 0px;
-    outline: 1px solid #efca89;
+    outline: none;
   
   }
   
+  input:focus{
+    box-shadow: none;
+    outline-offset: 0px;
+    outline: none;
+
+  }
+
   .formularioContacto {
     grid-area: formularioContacto;
     border: #efca89 solid 5px;
