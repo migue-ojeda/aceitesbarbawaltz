@@ -57,12 +57,29 @@ h2.carouselTitleFont {
   grid-area: gridIndex4;
 }
 
-.mainBlog {
-  background-color: #66565e;
+.imgBorderRadius {
+  border-radius: 30px;
+}
+
+/* Version Min 576 Max992*/
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .imagenProductoIndex {
+    height: 300px;
+  }
+}
+
+/* Version Max576 */
+@media only screen and (max-width: 576px) {
+  .imagenProductoIndex {
+    height: 290px;
+  }
+}
+
+h1.h1BarbaBlog {
+  margin-bottom: 40px;
 }
 
 .containerImg {
-  display: inline-block;
   overflow: hidden;
 }
 
@@ -70,14 +87,60 @@ h2.carouselTitleFont {
   display: block;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin: 0px;
+}
+
+.imagenProductoBlog2 {
+  margin-right: 30px;
+}
+
+.containerFAQ {
+  font-size: 1.3rem;
+  margin: 20px;
+  margin-right: 47px;
+}
+
+.parrafoFAQ {
+  padding-left: 5px;
+  font-size: 1.5rem;
+}
+
+.imgGotita {
+  margin: 0px;
 }
 
 .imagenProductoBlog:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+}
+
+/* Version Min 576 Max992*/
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .imagenProductoBlog {
+    height: 500px;
+  }
+}
+
+/* Version Max576 */
+@media only screen and (max-width: 576px) {
+  .imagenProductoBlog {
+    height: 250px;
+  }
 }
 
 /* TIENDA */
+.divTienda {
+  padding: 65px;
+}
+
+h1.h1Tienda {
+  padding-bottom: 0px;
+}
+
+h2.h2Tienda {
+  padding-top: 10px;
+}
+
 .fuente-main {
   color: whitesmoke;
 }
@@ -117,23 +180,6 @@ h2.carouselTitleFont {
 }
 
 /* BUCLES FIN */
-/* EACH */
-.dulce-foto {
-  background-image: url("../images/aceites/dulce.jpg");
-}
-
-.fresco-foto {
-  background-image: url("../images/aceites/fresco.jpg");
-}
-
-.oriental-foto {
-  background-image: url("../images/aceites/oriental.jpg");
-}
-
-.silvestre-foto {
-  background-image: url("../images/aceites/silvestre.jpg");
-}
-
 .fontColor-#9FBB71 {
   color: #9FBB71;
 }
@@ -228,180 +274,39 @@ h2.carouselTitleFont {
 /* MAPA FIN */
 .parrafoTienda {
   font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.formTienda {
+  padding-left: 10px;
+}
+
+.btn__Comprar {
+  padding-top: 20px;
+  padding-left: 130px;
+  padding-bottom: 30px;
 }
 
 h4.tienda4 {
-  text-align: left;
   font-size: 1.5rem;
-  padding: 18px 0px;
-}
-
-.gridProductos1 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  grid-area: "imagen1 lista1 compra1";
-}
-
-.imagen1 {
-  grid-area: imagen1;
-}
-
-.lista1 {
-  grid-area: lista1;
-}
-
-.compra1 {
-  grid-area: compra1;
-  height: 350px;
-  width: 100%;
-}
-
-/* Producto 2 */
-.gridProductos2 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  grid-area: "imagen2 lista2 compra2";
-}
-
-.imagen2 {
-  grid-area: imagen2;
-}
-
-.lista2 {
-  grid-area: lista2;
-}
-
-.compra2 {
-  grid-area: compra2;
-  height: 350px;
-  width: 100%;
-}
-
-/* Producto 3 */
-.gridProductos3 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  grid-area: "imagen3 lista3 compra3";
-}
-
-.imagen3 {
-  grid-area: imagen3;
-}
-
-.lista3 {
-  grid-area: lista3;
-}
-
-.compra3 {
-  grid-area: compra3;
-  height: 350px;
-  width: 100%;
-}
-
-/* Producto 4 */
-.gridProductos4 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-  grid-area: "imagen4 lista4 compra4";
-}
-
-.imagen4 {
-  grid-area: imagen4;
-}
-
-.lista4 {
-  grid-area: lista4;
-}
-
-.compra4 {
-  grid-area: compra4;
-  height: 350px;
-  width: 100%;
-}
-
-.cajaDescripcionAceites {
-  list-style-type: none;
-  color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border: 1px solid #efca89;
-  border-radius: 3px;
-  text-align: center;
-  padding: 50px;
-  margin: 50px;
-}
-
-.comprarForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #efca89;
-  border-radius: 3px;
-  text-align: center;
-  padding: 50px;
-  margin: 30px;
-}
-
-/* EFECTO IMAGEN PRODUCTO */
-.animate__animated.animate_fadeIn {
-  --animate-duration: 10s;
+  padding: 10px 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .carousel-control-prev {
   width: 15px;
-  left: 0;
+  left: 20px;
 }
 
 .carousel-control-next {
@@ -412,6 +317,8 @@ h4.tienda4 {
 /* CARRITO COMPRAS */
 .carrito {
   padding-top: 60px;
+  padding-left: 0px;
+  margin-right: 0px;
 }
 
 .selectTiendaText {
@@ -425,30 +332,75 @@ h4.tienda4 {
 }
 
 .labelTienda {
-  margin: 15px 20px;
-}
-
-.labelTiendaO {
-  margin: 7px 20px;
+  margin: 15px 10px;
+  padding-left: 30px;
 }
 
 .titulosTienda {
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding-left: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .containerTop {
   padding-top: 40px;
 }
 
-.containerBorder2 {
-  border-right: whitesmoke solid 1px;
-  color: white;
+.carouselBorderRadius {
+  border-radius: 30px;
+}
+
+.imgWidth {
+  width: 280px;
+}
+
+/* Version Min 576 Max992*/
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .divTienda {
+    padding: 20px;
+    padding-top: 70px;
+  }
+  .btn__Comprar {
+    padding-top: 20px;
+    padding-left: 120px;
+  }
+  .imgWidth {
+    width: 250px;
+    margin-top: 40px;
+  }
+  .labelTienda {
+    margin: 15px 10px;
+  }
+}
+
+/* Version Max576 */
+@media only screen and (max-width: 576px) {
+  .divTienda {
+    padding: 0px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .imgWidth {
+    width: 200px;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .btn__Comprar {
+    padding-top: 20px;
+    padding-left: 95px;
+  }
+  .labelTienda {
+    margin: 15px 60px;
+  }
+  .labelTienda0 {
+    margin: 15px 90px;
+  }
 }
 
 h1.contacto {
@@ -459,16 +411,18 @@ h1.contacto {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+  padding-bottom: 30px;
   border: 0;
   text-align: center;
 }
 
-/* Contaco Page */
-.mainContacto {
-  background-color: black;
+h2.contact {
+  padding-bottom: 40px;
 }
 
+/* Contaco Page */
 .formContacto {
+  font-size: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,65 +433,138 @@ h1.contacto {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 750px;
+  height: 600px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  background-color: black;
-}
-
-.formInput {
-  text-align: center;
-}
-
-/* FORMULARIO CONTACTO */
-.gridFormularioContacto {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 80% auto;
-      grid-template-columns: auto 80% auto;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: ". formularioContacto .";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-}
-
-textarea:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline-offset: 0px;
-  outline: none;
-}
-
-select:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline-offset: 0px;
-  outline: none;
-}
-
-input:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline-offset: 0px;
-  outline: none;
 }
 
 .formularioContacto {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: formularioContacto;
-  border: #efca89 solid 5px;
-  border-radius: 10px;
   padding-left: 50px;
   padding-right: 50px;
 }
 
 /* FORMULARIO CONTACTO FIN */
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner {
+  max-width: 758px;
+  margin: auto;
+  background: #566641;
+  border: 10px solid whitesmoke;
+  padding: 77px 99px 87px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  position: relative;
+  display: block;
+  margin-bottom: 48px;
+}
+
+.form-group span {
+  font-size: 15px;
+  color: whitesmoke;
+  position: absolute;
+  top: 11px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  cursor: text;
+}
+
+.form-group span.border {
+  height: 2px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 41px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all .15s ease;
+  transition: all .15s ease;
+  background: #fff;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  display: block;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  background: none;
+}
+
+.form-control:focus, .form-control:valid {
+  border-bottom: 2px solid #fff;
+}
+
+.form-control:focus + span, .form-control:valid + span {
+  -webkit-transform: translateY(-30px) scale(0.8);
+          transform: translateY(-30px) scale(0.8);
+}
+
+.form-control:focus + span + .border, .form-control:valid + span + .border {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+textarea.form-control {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.enviar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .inner {
+    padding: 27px 20px 37px;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+  }
+  .wrapper {
+    background: #566641;
+    border: 10px solid whitesmoke;
+  }
+}
+
 /* BARBA WALTZ PAGE */
 .cajaBarbaPage {
   display: -ms-grid;
@@ -563,6 +590,21 @@ ul.listaBarbaPage {
   list-style: none;
   list-style-type: none;
   text-align: center;
+  font-weight: 100;
+}
+
+.parrafoHistoria {
+  color: white;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 100;
+  padding: 15px 35px;
+}
+
+.pieImg {
+  font-weight: 100;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .juvenil {
@@ -575,6 +617,77 @@ ul.listaBarbaPage {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: casual;
+}
+
+.imgBW {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.imgBW2 {
+  margin: 0px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .imgBW2 {
+    margin: 0px;
+    border-radius: 10px;
+    height: 200px;
+  }
+  .imgVer {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .imgBW2 {
+    margin: 0px;
+    border-radius: 10px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .imgBW2 {
+    margin: 0px;
+    border-radius: 10px;
+    height: 165px;
+  }
+}
+
+.div404 {
+  height: 100vh;
+}
+
+.img404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 576px) {
+  .h14040 {
+    padding-left: px;
+    padding-right: 5px;
+  }
 }
 
 * {
@@ -641,6 +754,10 @@ html body h4 {
 
 p {
   color: whitesmoke;
+}
+
+a {
+  color: #ebf3ec;
 }
 
 nav ul li {
@@ -807,14 +924,6 @@ img {
 .presentacionesAceites {
   color: #e2bd6d;
   font-weight: bold;
-}
-
-.parrafoHistoria {
-  color: white;
-  font-size: 1.7rem;
-  font-style: normal;
-  font-weight: normal;
-  padding: 25px;
 }
 
 .carousel-item img {
@@ -984,11 +1093,7 @@ img {
     display: none;
   }
   .formularioContacto {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: formularioContacto;
-    border: #efca89 solid 1px;
-    border-radius: 3px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -1033,11 +1138,7 @@ img {
     font-size: 1.3rem;
   }
   .formularioContacto {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: formularioContacto;
-    border: #efca89 solid 1px;
-    border-radius: 3px;
     padding-left: 0px;
     padding-right: 0px;
   }

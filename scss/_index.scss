@@ -46,3 +46,23 @@ padding: 65px;
     .gridIndex4 {
       grid-area: gridIndex4;
     }
+
+    .imgBorderRadius{
+border-radius: 30px;
+    }
+
+        /* Version Min 576 Max992*/
+  @media only screen and (min-width: 576px) and (max-width: 992px) {
+    .imagenProductoIndex{
+      height: 300px;
+    }
+  }
+
+
+  /* Version Max576 */
+  
+  @media only screen and (max-width: 576px){
+    .imagenProductoIndex{
+      height: 290px;
+    }
+  }

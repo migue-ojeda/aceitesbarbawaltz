@@ -7,6 +7,18 @@ $Oriental:#D6AE70;
  /* TIENDA */
   $main-color: whitesmoke;
 
+.divTienda{
+padding: 65px;
+}
+
+h1.h1Tienda{
+  padding-bottom: 0px;
+}
+
+h2.h2Tienda{
+  padding-top: 10px;
+}
+
   .fuente-main{
     color: $main-color;
   }
@@ -41,15 +53,6 @@ $Oriental:#D6AE70;
   }
 /* BUCLES FIN */
 
-/* EACH */
-@each $aceite20 in dulce, fresco, oriental, silvestre {
-  .#{$aceite20}-foto { 
-
-    background-image: url('../images/aceites/#{$aceite20}.jpg');
-
-}
-
-};
 
 $coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
 
@@ -110,135 +113,33 @@ $coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
   /* MAPA FIN */
 
 .parrafoTienda{
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
+display: flex;
+padding: 0px 50px;
+justify-content: flex-start;
+}
+
+.formTienda{
+  padding-left: 10px
+}
+
+.btn__Comprar{
+  padding-top: 20px;
+  padding-left: 130px;
+  padding-bottom: 30px;
 }
 
 h4.tienda4{
-  text-align: left;
   font-size: 1.5rem;
-  padding: 18px 0px;
+  display: flex;
+  padding: 10px 50px;
+  justify-content: flex-start;
 }
-
-  .gridProductos1 {
-    @include gridProductos;
-    grid-area: "imagen1 lista1 compra1";
-  }
-
-  .imagen1 {
-    grid-area: imagen1;
-  }
-
-  .lista1 {
-    grid-area: lista1;
-
-  }
-
-  .compra1 {
-    grid-area: compra1;
-    @include compra;
-  }
-
-  /* Producto 2 */
-  .gridProductos2 {
-    @include gridProductos;
-    grid-area: "imagen2 lista2 compra2";
-  }
-
-  .imagen2 {
-    grid-area: imagen2;
-  }
-
-  .lista2 {
-    grid-area: lista2;
-
-  }
-
-  .compra2 {
-    grid-area: compra2;
-    @include compra;
-  }
-
-  /* Producto 3 */
-
-  .gridProductos3 {
-    @include gridProductos;
-    grid-area: "imagen3 lista3 compra3";
-  }
-
-  .imagen3 {
-    grid-area: imagen3;
-  }
-
-  .lista3 {
-    grid-area: lista3;
-
-  }
-
-  .compra3 {
-    grid-area: compra3;
-    @include compra;
-  }
-
-  /* Producto 4 */
-
-  .gridProductos4 {
-    @include gridProductos;
-    grid-area: "imagen4 lista4 compra4";
-  }
-
-  .imagen4 {
-    grid-area: imagen4;
-  }
-
-  .lista4 {
-    grid-area: lista4;
-
-  }
-
-  .compra4 {
-    grid-area: compra4;
-    @include compra;
-  }
-
-  .cajaDescripcionAceites {
-    list-style-type: none;
-    color: $main-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: 1px solid #efca89;
-    border-radius: 3px;
-    text-align: center;
-    padding: 50px;
-    margin: 50px;
-  }
-
-
-  .comprarForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 1px solid #efca89;
-    border-radius: 3px;
-    text-align: center;
-    padding: 50px;
-    margin: 30px;
-  }
-
-
-
-  /* EFECTO IMAGEN PRODUCTO */
-
-
-  .animate__animated.animate_fadeIn {
-    --animate-duration: 10s;
-  };
 
   .carousel-control-prev
 {
     width: 15px;
-    left: 0;
+    left: 20px;
 }
     
 .carousel-control-next
@@ -250,6 +151,8 @@ h4.tienda4{
 
 .carrito{
   padding-top: 60px;
+  padding-left: 0px;
+  margin-right: 0px;
 }
 
 .selectTiendaText{
@@ -263,25 +166,83 @@ h4.tienda4{
 }
 
 .labelTienda{
-  margin: 15px 20px;
+  margin: 15px 10px;
+  padding-left: 30px;
 }
 
-.labelTiendaO{
-  margin: 7px 20px;
-}
 
 .titulosTienda{
+  font-size: 1.5rem;
   display: flex;
-  justify-content: flex-start;
-  padding-left: 75px;
+  justify-content: center;
 }
 
 .containerTop{
   padding-top: 40px;
 }
 
-
-.containerBorder2{
-  border-right: whitesmoke solid 1px;
-  color: white;
+.carouselBorderRadius{
+  border-radius: 30px;
 }
+
+.imgWidth{
+  width: 280px;
+
+}
+
+  /* Version Min 576 Max992*/
+  
+  @media only screen and (min-width: 576px) and (max-width: 992px) {
+    .divTienda{
+      padding: 20px;
+      padding-top: 70px;
+      }
+    
+      .btn__Comprar{
+        padding-top: 20px;
+        padding-left: 120px;
+      }
+
+    .imgWidth{
+      width: 250px;
+      margin-top: 40px;
+    }
+
+    .labelTienda{
+      margin: 15px 10px;
+    }
+    
+  }
+
+    /* Version Max576 */
+
+  @media only screen and (max-width: 576px) {
+
+    .divTienda{
+      padding: 0px;
+      padding-top: 70px;
+      padding-bottom: 30px;
+      }
+
+    .imgWidth{
+      width: 200px;
+      margin-top: 40px;
+    }
+
+  }
+
+  @media only screen and (max-width: 320px){
+    .btn__Comprar{
+      padding-top: 20px;
+      padding-left: 95px;
+    }
+
+    .labelTienda{
+      margin: 15px 60px;
+    }
+
+    .labelTienda0{
+      margin: 15px 90px;
+    }
+    
+  }

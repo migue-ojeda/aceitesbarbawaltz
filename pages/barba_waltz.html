@@ -15,37 +15,35 @@
 </head>
 
 <body>
-  <header class="backColor">
-
+  <header>
 
     <nav
-      class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light header__navegador p-0 header__navegador--colorContactoBackground">
-      <div class="container-fluid p-0">
-        <a href="index.html"><img src="../images/logo blanco shadow min.png" title="Ir al inicio" alt="logo Barba Waltz"
-            height="60" class="header__navegador--logoBarba"></a>
+      class="navbar  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark header__navegador p-2 navbar-text .header__navegador--font">
+      <div class="container-fluid header__padding">
+        <a href="../index.html"><img src="../images/logo blanco letras.png" title="Ir al inicio" alt="logo Barba Waltz"
+            class="header__navegador--logoBarba"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-
-        <div class="collapse navbar-collapse ms-3" id="navbarNav">
+        <div class="collapse navbar-collapse ms-3 nav" id="navbarNav">
           <ul class="navbar-nav d-flex justify-content-around w-100">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+            <li class="nav-item ">
+              <a aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="tienda.html">Tienda</a>
+              <a class="" href="tienda.html">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="barba_waltz.html">Barba Waltz</a>
+              <a class="currentLink" href="barba_waltz.html">Barba Waltz</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="barba_blog.html">Barba Blog</a>
+              <a class="" href="barba_blog.html">Barba Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+              <a class="" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -53,30 +51,42 @@
     </nav>
   </header>
 
-  <main class="mainContacto">
-    <img src="../images/nuestraHistoria1.min.jpg" title="Nuestra Historia" alt="Nuestra Historia" width="100%"
-      class="imgSecciones">
+  <!-- AQUÍ VAN LOS PRODUCTOS ----------------------------------------------------------------------------------------------------------------------------->
+
+  <!-- ACEITE BOSQUE FRESCO ----------------------------------------------------------------------------------------------------------------------------->
+
+  <main class="mainIndex">
 
     <!-- BREADCRUMB --------------------------------------------------------------------------------------------->
 
-    <nav aria-label="breadcrumb ">
-      <ol class="breadcrumb mt-3 ms-5">
-        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Barba Waltz</li>
-      </ol>
-    </nav>
 
-    <h1>¿Quiénes Somos?</h1>
+    <div class="divTienda">
+
+      <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb ms-5 breadcrumbMargin">
+          <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+          <li class="breadcrumb-item active currentLink" aria-current="page">Barba Waltz</li>
+        </ol>
+      </nav>
+
+    <h1>NUESTRA HISTORIA</h1>
 
     <p class="parrafoHistoria">
 
       Barba Waltz nace el 12 de diciembre de 2014 en Mérida, Venezuela, como
       una propuesta de productos cosméticos para el mantenimiento y cuidado de
-      la barba. Su creador Rocco Preston Waltz crea la marca como una
+      la barba. Su creador <span style="font-style: italic; font-weight: 100;">Rocco Preston Waltz</span> crea la marca como una
       alternativa para el vacío existente en el mercado venezolano hasta el
       momento de productos para el hombre, específicamente para el cuidado de
-      la barba.<br><br>
+      la barba.</p>
 
+      <div>
+        <div class="imgBW">
+      <img src="../images/rocco1.JPG" alt="Rocco Preston Waltz, creador de Barba Waltz" height="350px" class="imgBW2"></div>
+      <p class="pieImg">Rocco Preston Waltz, creador de Barba Waltz.</p>
+    </div>
+
+      <p class="parrafoHistoria">
       Barba Waltz ofrece aceites con atractivas y masculinas
       fragancias que aparte de perfumar la barba, nutren e hidratan la piel y
       el vello evitando numerosas afecciones como lo son la caída, el quiebre,
@@ -84,9 +94,15 @@
       comezón producida por el crecimiento; al mismo tiempo, fortalecen y
       nutren el vello desde la raíz a la punta haciendo que crezca sano y
       fuerte dándole a la barba brillo, suavidad, manejabilidad y un aspecto
-      saludable.<br><br>
+      saludable.</p>
 
-      Actualmente ofrecen 4 aceites en 2 líneas; una casual y
+      <div>
+        <div class="imgBW">
+      <img src="../images/historia1.JPG" alt="Aceite para barba Bosque Silvestre 20ml" height="350px" class="imgBW2"></div>
+    </div>
+
+      <p class="parrafoHistoria">
+      Actualmente ofrecemos 4 aceites en 2 líneas; una casual y
       sobria y otra fresca y juvenil. Los aceites se encuentran hechos de dos
       tipos, los aceites base que le otorgan a la piel y a la barba los
       beneficios anteriormente mencionados; y los aceites esenciales que le
@@ -109,7 +125,7 @@
                   <li>Aceite Bosque Fresco</li>
                 </ul>
                 <img src="../images/hDulceSilvestre.jpg" title="Bosque Silvestre"
-                  alt="aceites para barba Bosque Dulce y Bosque Silvestre 30ml" height="500">
+                  alt="aceites para barba Bosque Dulce y Bosque Silvestre 30ml" height="500" style="border-radius: 10px;" class="imgVer">
               </div>
             </div>
           </div>
@@ -125,7 +141,7 @@
                 </ul>
 
                 <img src="../images/hOrientalFresco.jpg" title="Bosque Silvestre"
-                  alt="aceites para barba Bosque Oriental y Bosque Fresco 30ml" height="500">
+                  alt="aceites para barba Bosque Oriental y Bosque Fresco 30ml" height="500" style="border-radius: 10px;" class="imgVer">
               </div>
             </div>
           </div>
@@ -136,7 +152,10 @@
   </main>
 
 
-  <footer class="footerBackColor footerDisplayFlex">
+  <!-- FOOTER ----------------------------------------------------------------------------------------------------------------------------->
+
+  <footer class="footerIndexBackColor footerDisplayFlex">
+
     <div class="item1">
       <a href="https://www.facebook.com/BarbaWaltz" target="_blank"><img src="../images/facebook_white_24.png"
           title="Facebook" alt="facebook logo" /></a>
@@ -147,11 +166,19 @@
       <a href="mailto: waltz.barba@gmail.com" target="_blank"><img src="../images/mail_white_24.png"
           title="Email Barba Waltz" alt="email logo" /></a>
     </div>
+
+
     <div class="item2">
-      <p class="parrafoNegritaFooterWhite">#PorAmorALaBarba</p>
+      <p class="parrafoNegritaFooterWhite"> #PorAmorALaBarba</p>
     </div>
   </footer>
-</body>
-<script src="../js/bootstrap.js"></script>
 
+  <!-- SCRIPT -------------------------------------------------------------------------------------------->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/bootstrap.js"></script>
+</body>
 </html>

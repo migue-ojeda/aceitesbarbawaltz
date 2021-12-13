@@ -17,36 +17,35 @@
 
 <body>
 
-    <header class="backColor">
+    <header>
 
+        <nav
+            class="navbar  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark header__navegador p-2 navbar-text .header__navegador--font">
+            <div class="container-fluid header__padding">
+                <a href="../index.html"><img src="../images/logo blanco letras.png" title="Ir al inicio"
+                        alt="logo Barba Waltz" class="header__navegador--logoBarba"></a>
 
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light header__navegador p-0 header__navegador--blogBackground">
-            <div class="container-fluid p-0">
-                <a href="index.html"><img src="../images/logo blanco shadow min.png" title="Ir al inicio" alt="logo Barba Waltz"
-                    height="60" class="header__navegador--logoBarba"></a>
-                    
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
-                <div class="collapse navbar-collapse ms-3"  id="navbarNav">
+                <div class="collapse navbar-collapse ms-3 nav" id="navbarNav">
                     <ul class="navbar-nav d-flex justify-content-around w-100">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item ">
+                            <a aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="tienda.html">Tienda</a>
+                            <a class="" href="tienda.html">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="barba_waltz.html">Barba Waltz</a>
+                            <a class="" href="barba_waltz.html">Barba Waltz</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="barba_blog.html">Barba Blog</a>
+                            <a class="currentLink" href="barba_blog.html">Barba Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                            <a class="" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -54,64 +53,218 @@
         </nav>
     </header>
 
+    <!-- AQUÍ VAN LOS PRODUCTOS ----------------------------------------------------------------------------------------------------------------------------->
 
-    <main class="mainBlog">
-        <img src="../images/barbaBlog.jpg" title="Blog" alt="Blog" width="100%" class="imgSecciones">
+    <!-- ACEITE BOSQUE FRESCO ----------------------------------------------------------------------------------------------------------------------------->
+
+    <main class="mainIndex">
 
         <!-- BREADCRUMB --------------------------------------------------------------------------------------------->
 
-        <nav aria-label="breadcrumb ">
-            <ol class="breadcrumb mt-3 ms-5">
-                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Barba Blog</li>
-            </ol>
-        </nav>
+
+        <div class="divTienda">
+
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb ms-5 breadcrumbMargin">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active currentLink" aria-current="page">Barba Blog</li>
+                </ol>
+            </nav>
 
 
-        <h1>¿Cómo Usar Barba Waltz? FAQ</h1>
+            <h1 class="h1BarbaBlog">PREGUNTAS FRECUENTES</h1>
 
-        <div class="container">
-            <div class="row">
+            <div class="container">
+                <div class="row">
 
-                <!-- IMAGEN 1 ----------------------------------------->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div><img src="../images/BT1.min.jpg" alt=" Barba Tips, cuándo aplicar" width="350px"
-                                class="imagenProductoBlog"></div>
+                    <!-- IMAGEN 1 ----------------------------------------->
+                    <div class="col-12 col-md-12 col-lg-6 p-0 m-0 order-first order-md-first order-lg-first">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="containerImg"><img src="../images/blog5.jpg" alt=" Barba Tips, cuándo aplicar"
+                                    class="imagenProductoBlog mw-100 mh-100"></div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- IMAGEN 2 ----------------------------------------->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div><img src="../images/BT2.min.jpg" alt=" Barba Tips, cuándo aplicar" width="350px"
-                                class="imagenProductoBlog"></div>
+                    <!-- PARRAFO 1 ----------------------------------------->
+                    <div class="col-12 col-md-12 col-lg-6 order-0 order-md-0 order-lg-0">
+                        <div class="d-block-flex justify-content-space-evenly">
+                            <h2>¿Por Qué Usar Barba Waltz?</h2>
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"><span style="font-style: italic;"> Barba Waltz</span> está
+                                    diseñado para hidratar y nutrir la piel, evitando numerosas afecciones como:</p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Evita la picazón e irritación.</p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Previene la caída, las puntas abiertas, la caspa y el quiebre.
+                                </p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Evita la opacidad y la resequedad. </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- IMAGEN 3 ----------------------------------------->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div><img src="../images/BT3.min.jpg" alt=" Barba Tips, cuándo aplicar" width="350px"
-                                class="imagenProductoBlog"></div>
+                                        <!-- PARRAFO 2 ----------------------------------------->
+
+
+                    <div class="col-12 col-md-12 col-lg-6 order-2 order-md-2 order-lg-1">
+                        <div class="d-flex flex-column justify-content-space-evenly">
+                            <h2>¿Pará Qué Sirve?</h2>
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"><span style="font-style: italic;"> Barba Waltz</span> aparte de
+                                    cuidar tu barba también le otorga numerosas beneficios como:</p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Brillo, suavidad y aspecto saludable.</p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Estimula el crecimiento. </p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Perfuma la barba con atractivas fragancias. </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- IMAGEN 4 ----------------------------------------->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <div><img src="../images/BT4.min.jpg" alt=" Barba Tips, cuándo aplicar" width="350px"
-                                class="imagenProductoBlog"></div>
+                    <!-- IMAGEN 2 ----------------------------------------->
+                    <div class="col-12 col-md-12 col-lg-6 p-0 m-0 order-1 order-md-1 order-lg-2">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="containerImg"><img src="../images/blog6.jpg" alt=" Barba Tips, cuándo aplicar"
+                                    class="imagenProductoBlog  mw-100 mh-100"></div>
+                        </div>
                     </div>
-                </div>
 
+
+                    <!-- IMAGEN 3 ----------------------------------------->
+                    <div class="col-12 col-md-12 col-lg-6 p-0 m-0 order-3 order-md-3 order-lg-3">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="containerImg"><img src="../images/blog2.jpg" alt=" Barba Tips, cuándo aplicar"
+                                    class="imagenProductoBlog mw-100 mh-100"></div>
+                        </div>
+                    </div>
+
+                    <!-- PARRAFO 3 ----------------------------------------->
+                    <div class="col-12 col-md-12 col-lg-6 order-4 order-md-4 order-lg-4">
+                        <div class="d-flex flex-column justify-content-space-evenly">
+                            <h2>¿Cúando Aplicar?</h2>
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Lo recomendable es aplicar <span style="font-style: italic;">
+                                        Barba Waltz aceite para barba </span>justo después del baño con la barba bien
+                                    seca.</p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> En ese momento los poros de la piel se encuentran abiertos,
+                                    absoribiendo mejor el aceite. </p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> El aceite hidratará y nutrirá el vello desde la raíz a la punta
+                                    dejando la barba suave y manejable . </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PARRAFO 4 ----------------------------------------->
+                    <div class="col-12 col-md-12 col-lg-6  order-6 order-md-6 order-lg-5">
+                        <div class="d-flex flex-column justify-content-space-evenly">
+                            <h2>¿Cúanto Aplicar?</h2>
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"><span style="font-style: italic;"> Barba Waltz aceite para barba
+                                    </span> se aplica por gotas y dependen del largo de tu barba</p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Barba corta, de 3 a 5 gotas.</p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Barba mediana, de 5 a 8 gotas. </p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Barba larga, de 8 a 12 gotas. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGEN 4 ----------------------------------------->
+                    <div class="col-12 col-md-12 col-lg-6 p-0 m-0 order-5 order-md-5 order-lg-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="containerImg"><img src="../images/blog3.jpg" alt=" Barba Tips, cuándo aplicar"
+                                    class="imagenProductoBlog  mw-100 mh-100"></div>
+                        </div>
+                    </div>
+
+                                        <!-- IMAGEN 5 ----------------------------------------->
+
+                    <div class="col-12 col-md-12 col-lg-6 p-0 m-0 order-7 order-md-7 order-lg-7">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="containerImg"><img src="../images/blog4.jpg" alt=" Barba Tips, cuándo aplicar"
+                                    class="imagenProductoBlog mw-100 mh-100"></div>
+                        </div>
+                    </div>
+
+                    <!-- PARRAFO 5 ----------------------------------------->
+                    <div class="col-12 col-md-12 col-lg-6 order-8 order-md-8 order-lg-8">
+                        <div class="d-flex flex-column justify-content-space-evenly">
+                            <h2>¿Cómo Aplicar?</h2>
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Bate bien el aceite y aplica la cantidad de gotas indica
+                                    anteriormente en la palma de tu mano.</p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Frota entre ambas manos y esparce bien a lo largo de tu barba sin
+                                    olvidar el bigote y ningun otro espacio. </p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> El aceite hidratará y nutrirá el vello desde la raíz a la punta
+                                    dejando la barba suave y manejable . </p>
+                            </div>
+
+                            <div class="d-inline-flex containerFAQ">
+                                <img src="../images/gotita" alt="Gota" height="20px" class="imgGotita">
+                                <p class="parrafoFAQ"> Peina tu barba la gusto deseado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
     </main>
 
-    <!-- FOOTER --------------------------------------------------------------------------------------------->
+    <!-- FOOTER ----------------------------------------------------------------------------------------------------------------------------->
 
-    <footer class="footerBlogBackColor footerDisplayFlex">
+    <footer class="footerIndexBackColor footerDisplayFlex">
+
         <div class="item1">
             <a href="https://www.facebook.com/BarbaWaltz" target="_blank"><img src="../images/facebook_white_24.png"
                     title="Facebook" alt="facebook logo" /></a>
@@ -122,12 +275,19 @@
             <a href="mailto: waltz.barba@gmail.com" target="_blank"><img src="../images/mail_white_24.png"
                     title="Email Barba Waltz" alt="email logo" /></a>
         </div>
+
+
         <div class="item2">
-            <p class="parrafoNegritaFooterWhite">#PorAmorALaBarba</p>
+            <p class="parrafoNegritaFooterWhite"> #PorAmorALaBarba</p>
         </div>
     </footer>
 
+    <!-- SCRIPT -------------------------------------------------------------------------------------------->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="../js/bootstrap.js"></script>
 </body>
 

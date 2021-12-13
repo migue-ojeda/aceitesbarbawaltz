@@ -1,9 +1,9 @@
-.mainBlog {
-    background-color: #66565e;
-  }
+h1.h1BarbaBlog{
+  margin-bottom: 40px;
+}
+
 
   .containerImg {
-    display: inline-block;
     overflow: hidden;
   }
 
@@ -12,10 +12,48 @@
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    margin: 0px;
+    }
+
+    .imagenProductoBlog2{
+      margin-right: 30px;
+    }
+
+    .containerFAQ{
+      font-size: 1.3rem;
+    margin: 20px;
+    margin-right: 47px;
+
+
+    }
+    .parrafoFAQ{
+      padding-left: 5px;
+      font-size: 1.5rem;
+    }
+
+    .imgGotita{
+      margin: 0px;
     }
 
   .imagenProductoBlog:hover {
-    -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    -moz-transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+  }
+
+
+    /* Version Min 576 Max992*/
+  @media only screen and (min-width: 576px) and (max-width: 992px) {
+    .imagenProductoBlog{
+      height: 500px;
+    }
+  }
+
+
+  /* Version Max576 */
+  
+  @media only screen and (max-width: 576px){
+    .imagenProductoBlog{
+      height: 250px;
+    }
   }

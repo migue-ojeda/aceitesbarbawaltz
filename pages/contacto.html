@@ -17,37 +17,35 @@
 
 <body>
 
-    <header class="backColor">
-
+    <header>
 
         <nav
-            class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light header__navegador p-0 header__navegador--colorContactoBackground">
-            <div class="container-fluid p-0">
-                <a href="index.html"><img src="../images/logo blanco shadow min.png" title="Ir al inicio"
-                        alt="logo Barba Waltz" height="60" class="header__navegador--logoBarba"></a>
+            class="navbar  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark header__navegador p-2 navbar-text .header__navegador--font">
+            <div class="container-fluid header__padding">
+                <a href="../index.html"><img src="../images/logo blanco letras.png" title="Ir al inicio"
+                        alt="logo Barba Waltz" class="header__navegador--logoBarba"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
-                <div class="collapse navbar-collapse ms-3" id="navbarNav">
+                <div class="collapse navbar-collapse ms-3 nav" id="navbarNav">
                     <ul class="navbar-nav d-flex justify-content-around w-100">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                        <li class="nav-item ">
+                            <a aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="tienda.html">Tienda</a>
+                            <a class="" href="tienda.html">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="barba_waltz.html">Barba Waltz</a>
+                            <a class="" href="barba_waltz.html">Barba Waltz</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="barba_blog.html">Barba Blog</a>
+                            <a class="" href="barba_blog.html">Barba Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                            <a class="currentLink" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -55,70 +53,65 @@
         </nav>
     </header>
 
-    <main class="mainContacto">
-        <img src="../images/contacto.min.jpg" title="Contacto" alt="Header Contacto Barba Waltz" width="100%"
-            class="imgSecciones">
+    <main class="mainIndex main404">
 
         <!-- BREADCRUMB --------------------------------------------------------------------------------------------->
 
-        <nav aria-label="breadcrumb ">
-            <ol class="breadcrumb mt-3 ms-5">
-                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
-            </ol>
-        </nav>
 
-        <!-- FORMULARIO DE CONTACTO ----------------------------------------------------------------------------------------------------------------------------->
+        <div class="divTienda">
 
+            <nav aria-label="breadcrumb ">
+                <ol class="breadcrumb ms-5 breadcrumbMargin">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active currentLink" aria-current="page">Contacto</li>
+                </ol>
+            </nav>
 
-        <h1 class="contacto"> Tu barba y tú son muy importantes para nosotros <br>
-            ¡Queremos escucharte! </h1>
-
-        <div class="gridFormularioContacto mt-5">
+            <!-- FORMULARIO DE CONTACTO ----------------------------------------------------------------------------------------------------------------------------->
 
 
+            <h1 class="contacto"> CONTACTO</h1>
 
-            <div class="formularioContacto">
 
-
-                <form action="#" method="post" class="formContacto">
-                    <label for="nombre">Nombre: <input type="text" name="nombre" placeholder="Nombre" class="formInput">
-                    </label>
-
-                    <label for="apellido">Apellido:
-                        <input type="text" name="apellido" placeholder="Apellido" class="formInput"></label>
-
-                    <label for="email">Correo:
-                        <input type="email" name="email" placeholder="Email" class="formInput"></label>
-
-                    <label for="telf">Teléfono:
-                        <input type="text" name="telf" placeholder="Teléfono" class="formInput"></label>
-
-                    <select name="razon">
-                        <option value="starter" hidden>Razón por la que nos escribes</option>
-                        <option value="comentario">Comentario</option>
-                        <option value="duda">Duda</option>
-                        <option value="reclamo">Reclamo</option>
-                    </select>
-
-                    <label>
-                        <textarea rows="5" cols="35" placeholder="Déjanos tu comentario" class="formInput"></textarea>
-                    </label>
-
-                    <div>Suscribirme al Barba News<input type="checkbox" name="newsletter" value="1"></div>
-
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar todo">
-
-                </form>
+            <div class="wrapper">
+                <div class="inner">
+                    <form action="">
+                        <h2 class="contact">Tu barba es muy importantes para nosotros.<br>
+                            ¡Queremos escucharte!</h2>
+                        <label class="form-group">
+                            <input type="text" class="form-control">
+                            <span>NOMBRE</span>
+                            <span class="border"></span>
+                        </label>
+                        <label class="form-group">
+                            <input type="text" class="form-control">
+                            <span>TELÉFONO</span>
+                            <span class="border"></span>
+                        </label>
+                        <label class="form-group">
+                            <input type="text" class="form-control">
+                            <span for="">CORREO</span>
+                            <span class="border"></span>
+                        </label>
+                        <label class="form-group">
+                            <textarea name="" id="" class="form-control"></textarea>
+                            <span for="">TU MENSAJE</span>
+                            <span class="border"></span>
+                        </label>
+                        <label for="Enviar" class=" enviar">
+                            <button class="btn--Silvestre enviar"><a href="404.html">Enviar
+                            </a></button>
+                        </label>
+                    </form>
+                </div>
             </div>
 
-        </div>
 
 
     </main>
 
-    <footer class="footerBackColor footerDisplayFlex">
+    <footer class="footerIndexBackColor footerDisplayFlex">
+
         <div class="item1">
             <a href="https://www.facebook.com/BarbaWaltz" target="_blank"><img src="../images/facebook_white_24.png"
                     title="Facebook" alt="facebook logo" /></a>
@@ -129,14 +122,21 @@
             <a href="mailto: waltz.barba@gmail.com" target="_blank"><img src="../images/mail_white_24.png"
                     title="Email Barba Waltz" alt="email logo" /></a>
         </div>
+
+
         <div class="item2">
-            <p class="parrafoNegritaFooterWhite">#PorAmorALaBarba</p>
+            <p class="parrafoNegritaFooterWhite"> #PorAmorALaBarba</p>
         </div>
     </footer>
 
+    <!-- SCRIPT -------------------------------------------------------------------------------------------->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/bootstrap.js"></script>
 
 </body>
-
-<script src="../js/bootstrap.js"></script>
 
 </html>

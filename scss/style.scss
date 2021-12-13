@@ -3,6 +3,7 @@
 @import "tienda";
 @import "contacto";
 @import "barba-waltz";
+@import "404";
 
 
 $main-color: whitesmoke;
@@ -73,7 +74,9 @@ html {
 p{
   color: $main-color;
 }
-
+a{
+  color: #ebf3ec;
+}
 nav ul li {
     list-style: none;
     font-size: 1.6rem;
@@ -226,14 +229,6 @@ nav ol li a:hover{
     font-weight: bold;
   }
   
-  
-  .parrafoHistoria {
-    color: white;
-    font-size: 1.7rem;
-    font-style: normal;
-    font-weight: normal;
-    padding: 25px;
-  }
 
   .carousel-item img {
     max-height: 500px;
@@ -386,8 +381,6 @@ nav ol li a:hover{
 
     .formularioContacto {
       grid-area: formularioContacto;
-      border: #efca89 solid 1px;
-      border-radius: 3px;
       padding-left: 5px;
       padding-right: 5px;
     }
@@ -441,8 +434,6 @@ nav ol li a:hover{
     
     .formularioContacto {
       grid-area: formularioContacto;
-      border: #efca89 solid 1px;
-      border-radius: 3px;
       padding-left: 0px;
       padding-right: 0px;
     }

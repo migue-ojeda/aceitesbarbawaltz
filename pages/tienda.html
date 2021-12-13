@@ -64,7 +64,7 @@
     <!-- BREADCRUMB --------------------------------------------------------------------------------------------->
 
 
-    <div class="divIndex">
+    <div class="divTienda">
 
       <nav aria-label="breadcrumb ">
         <ol class="breadcrumb ms-5 breadcrumbMargin">
@@ -74,41 +74,42 @@
       </nav>
           <!-- SECCIÓN DE PRODUCTOS TIENDA ----------------------------------------------------------------------------------------------------------------------------->
 
-      <h1>PRODUCTOS</h1>
-      <h2>Aceites Para Barba</h2>
-
-      <div class="container">
-        <div class="row">
-
+      <h1 class="h1Tienda">PRODUCTOS</h1>
+      <h2 class="h2Tienda">Aceites Para Barba</h2>
 
 <!-- CONTAINER PRODUCTOS 1 ------------------------------------------->
 
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
 
               <!-- BOSQUE SILVESTRE -------------------------------------->
-              <div class="col-12 col-md-12 col-lg-4">
-                <h3 class="titulosTienda">Aceite Bosque Silvestre</h3>
-                <div id="carouselSilvestre" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div id="carouselSilvestre" class="carousel slide carousel-fade " data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
 
 
-                      <div>
-                        <img src="../images/tBosqueSilvestre10.jpg" alt="Aceite para barba Bosque Silvestre 10ml"
-                          width="300px" class="d-block">
+
+                        <div class="d-flex justify-content-center align-items-center">
+                        <div><img src="../images/tBosqueSilvestre10.jpg" alt="Aceite para barba Bosque Silvestre 10ml"
+                           class="d-block carouselBorderRadius imgWidth"></div>
                       </div>
                     </div>
 
 
                     <div class="carousel-item">
-                      <img src="../images/tBosqueSilvestre20.jpg" alt="Aceite para barba Bosque Silvestre 20ml"
-                        width="300px" class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tBosqueSilvestre20.jpg" alt="Aceite para barba Bosque Silvestre 20ml"
+                        class="d-block carouselBorderRadius imgWidth"></div>
                     </div>
+                  </div>
+
                     <div class="carousel-item">
-                      <img src="../images/tBosqueSilvestre30.jpg" alt="Aceite para barba Bosque Silvestre 30ml"
-                        width="300px" class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tBosqueSilvestre30.jpg" alt="Aceite para barba Bosque Silvestre 30ml"
+                         class="d-block carouselBorderRadius imgWidth"></div>
                     </div>
+                  </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselSilvestre"
                     data-bs-slide="prev">
@@ -121,18 +122,19 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-              </div>
 
-              <!-- CARRITO COMPRAS ----------------------------------------->
-              <div class="col-12 col-md-12 col-lg-2 carrito containerBorder2">
+<!-- COMPRAR SILVESTRE-------------------------------------------------------------------------->
+
+
+                <h3 class="titulosTienda">Aceite Bosque Silvestre</h3>
                 <h4 class="tienda4">Detalles:</h4>
                 <p class="parrafoTienda">Posee aceite de coco, violeta, vainilla, lavanda, aceite de almendras, aceite
                   ricino y
-                  aceite de vitamina E. Su aroma es fresco y juvenil. </p>
+                  aceite de vitamina E. <br>Su aroma es fresco y juvenil. </p>
 
 
 
-                <form action="#" method="post">
+                <form action="#" method="post" class="formTienda">
 
                   <label for="name" class="selectTiendaText labelTienda">Cantidad:
 
@@ -140,7 +142,7 @@
 
 
 
-                  <label for="Tamaño" class="selectTiendaText labelTienda">Tamaño:
+                  <label for="Tamaño" class="selectTiendaText labelTienda0">Tamaño:
 
 
                     <select name="Tamaño" class="selectTienda">
@@ -150,37 +152,43 @@
                     </select></label>
 
 
-                  <label for="Comprar" class="labelTienda">
+                  <label for="Comprar" class="btn__Comprar">
                     <input type="submit" value="Comprar" class="btn--Silvestre enTienda btn--Silvestre__enTienda">
                   </label>
 
                 </form>
+
               </div>
+
 
               <!-- BOSQUE DULCE ------------------------------------------------>
 
-              <div class="col-12 col-md-12 col-lg-4">
-                <h3 class="titulosTienda">Aceite Bosque Dulce</h3>
+              <div class="col-12 col-md-6 col-lg-4">
                 <div id="carouselDulce" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
 
 
-                      <div>
-                        <img src="../images/tBosqueDulce10.jpg" alt="Aceite para barba Bosque Dulce 10ml" width="300px"
-                          class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div><img src="../images/tBosqueDulce10.jpg" alt="Aceite para barba Bosque Dulce 10ml" 
+                          class="d-block carouselBorderRadius imgWidth"></div>
                       </div>
                     </div>
 
 
                     <div class="carousel-item">
-                      <img src="../images/tBosqueDulce20.jpg" alt="Aceite para barba Bosque Dulce 20ml" width="300px"
-                        class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tBosqueDulce20.jpg" alt="Aceite para barba Bosque Dulce 20ml" 
+                        class="d-block carouselBorderRadius imgWidth"></div>
                     </div>
+                  </div>
+
                     <div class="carousel-item">
-                      <img src="../images/tBosqueDulce30.jpg" alt="Aceite para barba Bosque Dulce 30ml" width="300px"
-                        class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tBosqueDulce30.jpg" alt="Aceite para barba Bosque Dulce 30ml"
+                        class="d-block carouselBorderRadius imgWidth"></div>
                     </div>
+                  </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselDulce"
                     data-bs-slide="prev">
@@ -193,19 +201,21 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-              </div>
 
-              <!-- CARRITO COMPRAS ----------------------------------------->
-              <div class="col-12 col-md-12 col-lg-2 carrito">
+
+              <!-- COMPRAR DULCE-------------------------------------------------------------------------->
+
+                <h3 class="titulosTienda">Aceite Bosque Dulce</h3>
                 <h4 class="tienda4">Detalles:</h4>
                 <p class="parrafoTienda"> Posee aceite de vainilla, palo, canela, bergamota, sándalo, aceite de
                   almendras, aceite
                   ricino y
-                  aceite de vitamina E. Su aroma es serio y casual.</p>
+                  aceite de vitamina E.
+                  <br>Su aroma es serio y casual.</p>
 
 
 
-                <form action="#" method="post">
+                <form action="#" method="post" class="formTienda">
 
                   <label for="name" class="selectTiendaText labelTienda">Cantidad:
 
@@ -213,7 +223,7 @@
 
 
 
-                  <label for="Tamaño" class="selectTiendaText labelTienda">Tamaño:
+                  <label for="Tamaño" class="selectTiendaText labelTienda0">Tamaño:
 
 
                     <select name="Tamaño" class="selectTienda">
@@ -223,48 +233,43 @@
                     </select></label>
 
 
-                  <label for="Comprar" class="labelTienda">
+                  <label for="Comprar" class="btn__Comprar">
                     <input type="submit" value="Comprar" class="btn--Silvestre enTienda btn--Silvestre__enTienda">
                   </label>
-
-                </form>
+                                  </form>
               </div>
 
-
-            </div>
-          </div>
+              <!-- BOSQUE FRESCO-------------------------------------------------------------------------->
 
 
-<!-- CONTAINER PRODUCTOS 2 ------------------------------------------->
+              <div class="col-12 col-md-6 col-lg-4">
 
-
-          <div class="container containerTop">
-            <div class="row">
-
-              <!-- BOSQUE FRESCO-------------------------------------->
-
-              <div class="col-12 col-md-12 col-lg-4">
-                <h3 class="titulosTienda">Aceite Bosque Fresco</h3>
                 <div id="carouselFresco" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
 
 
-                      <div>
-                        <img src="../images/tBosqueFresco10.jpg" alt="Aceite para barba Bosque Fresco 10ml"
-                          width="300px" class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div><img src="../images/tBosqueFresco10.jpg" alt="Aceite para barba Bosque Fresco 10ml"
+                           class="d-block carouselBorderRadius imgWidth"></div>
                       </div>
                     </div>
 
 
                     <div class="carousel-item">
-                      <img src="../images/tBosqueFresco20.jpg" alt="Aceite para barba Bosque Fresco 20ml"
-                        width="300px" class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tBosqueFresco20.jpg" alt="Aceite para barba Bosque Fresco 20ml"
+                         class="d-block carouselBorderRadius imgWidth"></div>
                     </div>
+                  </div>
+
+
                     <div class="carousel-item">
-                      <img src="../images/tBosqueFresco30.jpg" alt="Aceite para barba Bosque Fresco 30ml"
-                        width="300px" class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tBosqueFresco30.jpg" alt="Aceite para barba Bosque Fresco 30ml"
+                         class="d-block carouselBorderRadius imgWidth"></div>
                     </div>
+                  </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselFresco"
                     data-bs-slide="prev">
@@ -277,17 +282,19 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-              </div>
 
-              <!-- CARRITO COMPRAS ----------------------------------------->
-              <div class="col-12 col-md-12 col-lg-2 carrito containerBorder2">
+                              <!-- COMPRAR FRESCO-------------------------------------------------------------------------->
+
+                <h3 class="titulosTienda">Aceite Bosque Fresco</h3>
+
                 <h4 class="tienda4">Detalles:</h4>
                 <p class="parrafoTienda"> Posee aceite de romero, hierbabuena, palo aceite de almendras, aceite
-                  ricino y aceite de vitamina E. Es amaderado y un tanto cítrico.</p>
+                  ricino y aceite de vitamina E.
+                  <br>Su aroma es amaderado y un tanto cítrico.</p>
 
 
 
-                <form action="#" method="post">
+                <form action="#" method="post" class="formTienda">
 
                   <label for="name" class="selectTiendaText labelTienda">Cantidad:
 
@@ -295,47 +302,55 @@
 
 
 
-                  <label for="Tamaño" class="selectTiendaText labelTienda">Tamaño:
+                    <label for="Tamaño" class="selectTiendaText labelTienda0">Tamaño:
 
 
-                    <select name="Tamaño" class="selectTienda">
-                      <option value="10ml">10ml</option>
-                      <option value="20ml">20ml</option>
-                      <option value="30ml">30ml</option>
-                    </select></label>
+                      <select name="Tamaño" class="selectTienda">
+                        <option value="10ml">10ml</option>
+                        <option value="20ml">20ml</option>
+                        <option value="30ml">30ml</option>
+                      </select></label>
 
 
-                  <label for="Comprar" class="labelTienda">
+                  <label for="Comprar" class="btn__Comprar">
                     <input type="submit" value="Comprar" class="btn--Silvestre enTienda btn--Silvestre__enTienda">
                   </label>
 
                 </form>
-              </div>
+
+
+            </div>
+
+
 
               <!-- BOSQUE ORIENTAL ------------------------------------------------>
 
-              <div class="col-12 col-md-12 col-lg-4">
-                <h3 class="titulosTienda">Aceite Bosque Oriental</h3>
+              <div class="col-12 col-md-6 col-lg-4">
                 <div id="carouselOriental" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
 
 
-                      <div>
-                        <img src="../images/tBosqueOriental10.jpg" alt="Aceite para barba Bosque Oriental 10ml" width="300px"
-                          class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div><img src="../images/tBosqueOriental10.jpg" alt="Aceite para barba Bosque Oriental 10ml"
+                          class="d-block carouselBorderRadius imgWidth"></div>
                       </div>
                     </div>
 
 
                     <div class="carousel-item">
-                      <img src="../images/tBosqueOriental20.jpg" alt="Aceite para barba Bosque Oriental 20ml" width="300px"
-                        class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tBosqueOriental20.jpg" alt="Aceite para barba Bosque Oriental 20ml" 
+                        class="d-block carouselBorderRadius imgWidth"></div>
                     </div>
+                  </div>
+
                     <div class="carousel-item">
-                      <img src="../images/tBosqueOriental30.jpg" alt="Aceite para barba Bosque Oriental 30ml" width="300px"
-                        class="d-block">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tBosqueOriental30.jpg" alt="Aceite para barba Bosque Oriental 30ml" 
+                        class="d-block carouselBorderRadius imgWidth"></div>
                     </div>
+                  </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselOriental"
                     data-bs-slide="prev">
@@ -348,10 +363,11 @@
                     <span class="visually-hidden">Next</span>
                   </button>
                 </div>
-              </div>
 
-              <!-- CARRITO COMPRAS ----------------------------------------->
-              <div class="col-12 col-md-12 col-lg-2 carrito">
+              <!-- COMPRAR ORIENTAL ------------------------------------------------>
+
+              <h3 class="titulosTienda">Aceite Bosque Oriental</h3>
+
                 <h4 class="tienda4">Detalles:</h4>
                 <p class="parrafoTienda">
 
@@ -361,7 +377,7 @@
 
 
 
-                <form action="#" method="post">
+                <form action="#" method="post" class="formTienda">
 
                   <label for="name" class="selectTiendaText labelTienda">Cantidad:
 
@@ -369,7 +385,7 @@
 
 
 
-                  <label for="Tamaño" class="selectTiendaText labelTiendaO">Tamaño:
+                  <label for="Tamaño" class="selectTiendaText labelTienda0">Tamaño:
 
 
                     <select name="Tamaño" class="selectTienda">
@@ -379,16 +395,181 @@
                     </select></label>
 
 
-                  <label for="Comprar" class="labelTienda">
+                  <label for="Comprar" class="btn__Comprar">
                     <input type="submit" value="Comprar" class="btn--Silvestre enTienda btn--Silvestre__enTienda">
                   </label>
 
                 </form>
               </div>
 
+              <!-- COMBO DULCE SILVESTRE ----------------------------------------->
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div id="carouselComboDS" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+
+                      <div>
+                        <div class="d-flex justify-content-center align-items-center">
+                        <div><img src="../images/tComboDS1.jpg" alt="Aceite para barba Bosque Oriental 10ml"
+                          class="d-block carouselBorderRadius imgWidth"></div>
+                      </div>
+                    </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tComboDS2.jpg" alt="Aceite para barba Bosque Oriental 20ml"
+                        class="d-block carouselBorderRadius imgWidth"></div> 
+                      </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center align-items-center">
+                      <div><img src="../images/tComboDS3.jpg" alt="Aceite para barba Bosque Oriental 30ml"
+                        class="d-block carouselBorderRadius imgWidth"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselComboDS"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselComboDS"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+
+              <!-- COMPRAR COMBO DULCE SILVESTRE ------------------------------------------------>
+
+              <h3 class="titulosTienda">Combo Dulce Silvestre</h3>
+
+                <h4 class="tienda4">Detalles:</h4>
+                <p class="parrafoTienda">
+
+                  Una combinación de nuestros Aceites Bosque Dulce y Bosque Silvestre para que tengas dos opciones de aromas al mismo tiempo que cuidas tu piel y tu barba.
+                
+                </p>
+
+
+
+                <form action="#" method="post" class="formTienda">
+
+                  <label for="name" class="selectTiendaText labelTienda">Cantidad:
+
+                    <input type="number" name="cantidad" min="0" max="999" value="0" class="selectTienda"></label>
+
+
+
+                  <label for="Tamaño" class="selectTiendaText labelTienda0">Tamaño:
+
+
+                    <select name="Tamaño" class="selectTienda">
+                      <option value="10ml">10ml</option>
+                      <option value="20ml">20ml</option>
+                      <option value="30ml">30ml</option>
+                    </select></label>
+
+
+                  <label for="Comprar" class="btn__Comprar">
+                    <input type="submit" value="Comprar" class="btn--Silvestre enTienda btn--Silvestre__enTienda">
+                  </label>
+
+                </form>
+              </div>
+
+                        <!-- COMBO FRESCO ORIENTAL ----------------------------------------->
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                          <div id="carouselComboFO" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+          
+          
+                                <div class="d-flex justify-content-center align-items-center">
+                                  <div><img src="../images/tComboFO1.jpg" alt="Aceite para barba Bosque Oriental 10ml" 
+                                    class="d-block carouselBorderRadius imgWidth"></div>
+                                </div>
+                              </div>
+          
+          
+                              <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center">
+                                <div><img src="../images/tComboFO2.jpg" alt="Aceite para barba Bosque Oriental 20ml" 
+                                  class="d-block carouselBorderRadius imgWidth"></div>
+                              </div>
+                            </div>
+
+                              <div class="carousel-item">
+                                <div class="d-flex justify-content-center align-items-center">
+                                <img src="../images/tComboFO3.jpg" alt="Aceite para barba Bosque Oriental 30ml"
+                                  class="d-block carouselBorderRadius imgWidth">
+                                </div>
+                              </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselComboFO"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselComboFO"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+          
+                        <!-- COMPRAR COMBO FRESCO ORIENTAL ------------------------------------------------>
+          
+                        <h3 class="titulosTienda">Combo Fresco Oriental</h3>
+          
+                          <h4 class="tienda4">Detalles:</h4>
+                          <p class="parrafoTienda">
+          
+                            Una combinación de nuestros Aceites Bosque Fresco y Bosque Oriental; dos opciones de aromas y la misma protección para tu piel y tu barba.
+                          
+                          </p>
+          
+          
+          
+                          <form action="#" method="post" class="formTienda">
+          
+                            <label for="name" class="selectTiendaText labelTienda">Cantidad:
+          
+                              <input type="number" name="cantidad" min="0" max="999" value="0" class="selectTienda"></label>
+          
+          
+          
+                            <label for="Tamaño" class="selectTiendaText  labelTienda0">Tamaño:
+          
+          
+                              <select name="Tamaño" class="selectTienda">
+                                <option value="10ml">10ml</option>
+                                <option value="20ml">20ml</option>
+                                <option value="30ml">30ml</option>
+                              </select></label>
+          
+          
+                            <label for="Comprar" class="btn__Comprar">
+                              <input type="submit" value="Comprar" class="btn--Silvestre enTienda btn--Silvestre__enTienda">
+                            </label>
+          
+                          </form>
+                        </div>
+
+
 
             </div>
           </div>
+
+
 
 
 
