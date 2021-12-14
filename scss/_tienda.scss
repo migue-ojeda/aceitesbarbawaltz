@@ -19,66 +19,6 @@ h2.h2Tienda{
   padding-top: 10px;
 }
 
-  .fuente-main{
-    color: $main-color;
-  }
-  /* Producto 1 */
-
-  @mixin gridProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    align-items: center;
-    justify-items: center;
-  }
-
-  @mixin compra {
-    height: 350px;
-    width: 100%;
-
-  }
-
-/* BUCLES */
-  @for $i from 1 through 4 {
-    .lista-#{$i} {
-      height: 250px;
-    }
-  }
-
-  @for $i from 1 through 4 {
-    .compra-#{$i} {
-      height: 350px;
-    }
-  }
-/* BUCLES FIN */
-
-
-$coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
-
-@each $color in $coloresAceites {
-  .fontColor-#{$color}{
-    color: $color;
-  }
-
-}
-
-/* EACH FIN */
-
-  /* MAPA */
-  $aceite:   
-  (Silvestre: #9FBB71,
-  Dulce: #5849BF,
-  Fresco: #04BFBF,
-  Oriental:#D6AE70,
-  );
-  
-  @each $aNombre, $suscolor in $aceite {
-    .fuente-#{$aNombre} {
-      color: $suscolor;
-    }
-  }
-
   $colors-Compra: 
   (Silvestre: #9FBB71,
     Dulce: #5849BF,
@@ -107,6 +47,7 @@ $coloresAceites: $Silvestre, $Dulce, $Fresco, $Oriental;
   .btn--Silvestre__enTienda{
     padding: 1px 20px;
     font-size: 1.5rem;
+    font-weight: bold;
 
   }
 
@@ -136,6 +77,10 @@ h4.tienda4{
   justify-content: flex-start;
 }
 
+input:focus{
+  outline: none;
+}
+
   .carousel-control-prev
 {
     width: 15px;
@@ -146,13 +91,6 @@ h4.tienda4{
 {
     width: 15px;
     right: 20px;
-}
-/* CARRITO COMPRAS */
-
-.carrito{
-  padding-top: 60px;
-  padding-left: 0px;
-  margin-right: 0px;
 }
 
 .selectTiendaText{
@@ -173,12 +111,9 @@ h4.tienda4{
 
 .titulosTienda{
   font-size: 1.5rem;
+  font-weight: bold;
   display: flex;
   justify-content: center;
-}
-
-.containerTop{
-  padding-top: 40px;
 }
 
 .carouselBorderRadius{

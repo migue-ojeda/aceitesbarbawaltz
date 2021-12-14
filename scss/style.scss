@@ -108,20 +108,6 @@ nav ul li {
   }
 
   
-  .header__navegador--colorContactoBackground {
-    background: #F2EDE4;
-    background: -moz-linear-gradient(top, #F2EDE4 0%, #000000 100%);
-    background: -webkit-linear-gradient(top, #F2EDE4 0%, #000000 100%);
-    background: linear-gradient(to bottom, #F2EDE4 0%, #000000 100%);
-  }
-  
-  .header__navegador--blogBackground {
-    background: #F2EDE4;
-    background: -moz-linear-gradient(top, #F2EDE4 0%, #66565e 100%);
-    background: -webkit-linear-gradient(top, #F2EDE4 0%, #66565e 100%);
-    background: linear-gradient(to bottom, #F2EDE4 0%, #66565e 100%);
-  }
-  
   .header__navegador--logoBarba {
     display: flex;
     align-items: center;
@@ -131,24 +117,6 @@ nav ul li {
     height: 60px;
   }
   
-  .header__navegador--BarbaWaltzHeader {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header__navegador--barraNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 89%;
-    align-items: center;
-    padding: 0;
-    margin-left: 100px;
-    margin-right: 50px;
-    margin-top: 0;
-    margin-bottom: 0;
-  
-  }
 
 .breadcrumbMargin{
   padding-top: 25px;
@@ -215,20 +183,6 @@ nav ol li a:hover{
     border: 0;
   }
   
-  .parrafoNegrita {
-    font-style: italic;
-    color: #a37a2f;
-    padding: 0;
-    border: 0;
-    margin: 0;
-  
-  }
-
-  .presentacionesAceites {
-    color: #e2bd6d;
-    font-weight: bold;
-  }
-  
 
   .carousel-item img {
     max-height: 500px;
@@ -265,28 +219,6 @@ nav ol li a:hover{
   .footerIndexBackColor {
     background:#566641;
   }
-
-
-  
-  .footerBackColor {
-    background: #000000;
-    background: -moz-linear-gradient(top, #000000 0%, #F2EDE4 100%);
-    background: -webkit-linear-gradient(top, #000000 0%, #F2EDE4 100%);
-    background: linear-gradient(to bottom, #000000 0%, #F2EDE4 100%);
-  }
-  
-  .footerBlogBackColor {
-    background: #66565E;
-    background: -moz-linear-gradient(top, #66565E 0%, #F2EDE4 100%);
-    background: -webkit-linear-gradient(top, #66565E 0%, #F2EDE4 100%);
-    background: linear-gradient(to bottom, #66565E 0%, #F2EDE4 100%);
-  
-  }
-  
-  .parrafoNegritaFooter {
-    font-weight: normal;
-    color: #a37a2f;
-  }
   
   .parrafoNegritaFooterWhite {
     font-weight: 100;
@@ -295,13 +227,6 @@ nav ol li a:hover{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
   }
 
-  .parrafoNegritaFooterWhite2{
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
-  }
-  
   /* 3.Footer Fin */
   
   /* Version Max576 */
@@ -341,32 +266,6 @@ nav ol li a:hover{
       margin-top: 35px;
     }
   
-    .gridIndex {
-      grid-template-columns: 1fr;
-      grid-template-rows: 4(1fr);
-      grid-template-areas:
-        "gridIndex1"
-        "gridIndex2"
-        "gridIndex3"
-        "gridIndex4";
-    }
-  
-    .gridIndex1 {
-      grid-area: gridIndex1;
-    }
-  
-    .gridIndex2 {
-      grid-area: gridIndex2;
-    }
-  
-    .gridIndex3 {
-      grid-area: gridIndex3;
-    }
-  
-    .gridIndex4 {
-      grid-area: gridIndex4;
-    }
-  
     .footerDisplayFlex .item1 {
       display: flex;
       justify-content: space-between;
@@ -378,13 +277,6 @@ nav ol li a:hover{
     }
 
 
-
-    .formularioContacto {
-      grid-area: formularioContacto;
-      padding-left: 5px;
-      padding-right: 5px;
-    }
-
   }
   
   /* Version Min 576 Max992*/
@@ -395,47 +287,10 @@ nav ol li a:hover{
       display: none;
       }
 
-    .gridIndex {
-      grid-template-columns: 1fr;
-      grid-template-rows: 4(1fr);
-      grid-template-areas:
-        "gridIndex1"
-        "gridIndex2"
-        "gridIndex3"
-        "gridIndex4";
-    }
-  
-    .imgHeight360 {
-      height: 350px;
-  
-    }
-  
-    .gridIndex1 {
-      grid-area: gridIndex1;
-    }
-  
-    .gridIndex2 {
-      grid-area: gridIndex2;
-    }
-  
-    .gridIndex3 {
-      grid-area: gridIndex3;
-    }
-  
-    .gridIndex4 {
-      grid-area: gridIndex4;
-    }
   
     a:link {
       font-size: 1.3rem;
   
-    }
-
-    
-    .formularioContacto {
-      grid-area: formularioContacto;
-      padding-left: 0px;
-      padding-right: 0px;
     }
   
   }

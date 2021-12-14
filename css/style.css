@@ -17,46 +17,6 @@ h2.carouselTitleFont {
   padding: 65px;
 }
 
-/* Contenedor Index */
-.gridIndex {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
-      grid-template-areas: "gridIndex1 gridIndex2" "gridIndex3 gridIndex4";
-}
-
-.gridIndex1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: gridIndex1;
-}
-
-.gridIndex2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: gridIndex2;
-}
-
-.gridIndex3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: gridIndex3;
-}
-
-.gridIndex4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: gridIndex4;
-}
-
 .imgBorderRadius {
   border-radius: 30px;
 }
@@ -79,6 +39,10 @@ h1.h1BarbaBlog {
   margin-bottom: 40px;
 }
 
+.fuente-main {
+  color: whitesmoke;
+}
+
 .containerImg {
   overflow: hidden;
 }
@@ -88,10 +52,6 @@ h1.h1BarbaBlog {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   margin: 0px;
-}
-
-.imagenProductoBlog2 {
-  margin-right: 30px;
 }
 
 .containerFAQ {
@@ -139,79 +99,6 @@ h1.h1Tienda {
 
 h2.h2Tienda {
   padding-top: 10px;
-}
-
-.fuente-main {
-  color: whitesmoke;
-}
-
-/* Producto 1 */
-/* BUCLES */
-.lista-1 {
-  height: 250px;
-}
-
-.lista-2 {
-  height: 250px;
-}
-
-.lista-3 {
-  height: 250px;
-}
-
-.lista-4 {
-  height: 250px;
-}
-
-.compra-1 {
-  height: 350px;
-}
-
-.compra-2 {
-  height: 350px;
-}
-
-.compra-3 {
-  height: 350px;
-}
-
-.compra-4 {
-  height: 350px;
-}
-
-/* BUCLES FIN */
-.fontColor-#9FBB71 {
-  color: #9FBB71;
-}
-
-.fontColor-#5849BF {
-  color: #5849BF;
-}
-
-.fontColor-#04BFBF {
-  color: #04BFBF;
-}
-
-.fontColor-#D6AE70 {
-  color: #D6AE70;
-}
-
-/* EACH FIN */
-/* MAPA */
-.fuente-Silvestre {
-  color: #9FBB71;
-}
-
-.fuente-Dulce {
-  color: #5849BF;
-}
-
-.fuente-Fresco {
-  color: #04BFBF;
-}
-
-.fuente-Oriental {
-  color: #D6AE70;
 }
 
 .btn--Silvestre {
@@ -269,6 +156,7 @@ h2.h2Tienda {
 .btn--Silvestre__enTienda {
   padding: 1px 20px;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* MAPA FIN */
@@ -304,6 +192,10 @@ h4.tienda4 {
           justify-content: flex-start;
 }
 
+input:focus {
+  outline: none;
+}
+
 .carousel-control-prev {
   width: 15px;
   left: 20px;
@@ -312,13 +204,6 @@ h4.tienda4 {
 .carousel-control-next {
   width: 15px;
   right: 20px;
-}
-
-/* CARRITO COMPRAS */
-.carrito {
-  padding-top: 60px;
-  padding-left: 0px;
-  margin-right: 0px;
 }
 
 .selectTiendaText {
@@ -338,16 +223,13 @@ h4.tienda4 {
 
 .titulosTienda {
   font-size: 1.5rem;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.containerTop {
-  padding-top: 40px;
 }
 
 .carouselBorderRadius {
@@ -420,33 +302,6 @@ h2.contact {
   padding-bottom: 40px;
 }
 
-/* Contaco Page */
-.formContacto {
-  font-size: 1.3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  height: 600px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-.formularioContacto {
-  grid-area: formularioContacto;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-/* FORMULARIO CONTACTO FIN */
 .wrapper {
   min-height: 100vh;
   display: -webkit-box;
@@ -685,7 +540,7 @@ ul.listaBarbaPage {
 
 @media only screen and (max-width: 576px) {
   .h14040 {
-    padding-left: px;
+    padding-left: 5px;
     padding-right: 5px;
   }
 }
@@ -796,18 +651,6 @@ nav ul li a {
   padding-right: 60px;
 }
 
-.header__navegador--colorContactoBackground {
-  background: #F2EDE4;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE4), to(#000000));
-  background: linear-gradient(to bottom, #F2EDE4 0%, #000000 100%);
-}
-
-.header__navegador--blogBackground {
-  background: #F2EDE4;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE4), to(#66565e));
-  background: linear-gradient(to bottom, #F2EDE4 0%, #66565e 100%);
-}
-
 .header__navegador--logoBarba {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,37 +662,6 @@ nav ul li a {
   margin-top: 2px;
   margin-right: 0;
   height: 60px;
-}
-
-.header__navegador--BarbaWaltzHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__navegador--barraNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 89%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0;
-  margin-left: 100px;
-  margin-right: 50px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .breadcrumbMargin {
@@ -913,19 +725,6 @@ img {
   border: 0;
 }
 
-.parrafoNegrita {
-  font-style: italic;
-  color: #a37a2f;
-  padding: 0;
-  border: 0;
-  margin: 0;
-}
-
-.presentacionesAceites {
-  color: #e2bd6d;
-  font-weight: bold;
-}
-
 .carousel-item img {
   max-height: 500px;
   /* input your desired height here */
@@ -979,33 +778,9 @@ img {
   background: #566641;
 }
 
-.footerBackColor {
-  background: #000000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#F2EDE4));
-  background: linear-gradient(to bottom, #000000 0%, #F2EDE4 100%);
-}
-
-.footerBlogBackColor {
-  background: #66565E;
-  background: -webkit-gradient(linear, left top, left bottom, from(#66565E), to(#F2EDE4));
-  background: linear-gradient(to bottom, #66565E 0%, #F2EDE4 100%);
-}
-
-.parrafoNegritaFooter {
-  font-weight: normal;
-  color: #a37a2f;
-}
-
 .parrafoNegritaFooterWhite {
   font-weight: 100;
   font-size: 2.0rem;
-  color: white;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
-}
-
-.parrafoNegritaFooterWhite2 {
-  font-weight: 300;
-  font-size: 1.5rem;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.43);
 }
@@ -1053,33 +828,6 @@ img {
   .imgSecciones {
     margin-top: 35px;
   }
-  .gridIndex {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 4 1fr;
-        grid-template-rows: 4 1fr;
-        grid-template-areas: "gridIndex1" "gridIndex2" "gridIndex3" "gridIndex4";
-  }
-  .gridIndex1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: gridIndex1;
-  }
-  .gridIndex2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: gridIndex2;
-  }
-  .gridIndex3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: gridIndex3;
-  }
-  .gridIndex4 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: gridIndex4;
-  }
   .footerDisplayFlex .item1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1092,11 +840,6 @@ img {
   .footerDisplayFlex .item2 {
     display: none;
   }
-  .formularioContacto {
-    grid-area: formularioContacto;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
 }
 
 /* Version Min 576 Max992*/
@@ -1104,43 +847,8 @@ img {
   .footerDisplayFlex .item3 {
     display: none;
   }
-  .gridIndex {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 4 1fr;
-        grid-template-rows: 4 1fr;
-        grid-template-areas: "gridIndex1" "gridIndex2" "gridIndex3" "gridIndex4";
-  }
-  .imgHeight360 {
-    height: 350px;
-  }
-  .gridIndex1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: gridIndex1;
-  }
-  .gridIndex2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: gridIndex2;
-  }
-  .gridIndex3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: gridIndex3;
-  }
-  .gridIndex4 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: gridIndex4;
-  }
   a:link {
     font-size: 1.3rem;
-  }
-  .formularioContacto {
-    grid-area: formularioContacto;
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
