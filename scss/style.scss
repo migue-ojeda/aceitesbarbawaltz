@@ -103,8 +103,8 @@ nav ul li {
   }
   
   .header__padding{
-    padding-left: 70px;
-    padding-right: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   
@@ -275,7 +275,9 @@ nav ol li a:hover{
     .footerDisplayFlex .item2 {
       display: none;
     }
-
+    .header__navegador--logoBarba{
+      margin-left: 0px;
+    }
 
   }
   
@@ -292,5 +294,7 @@ nav ol li a:hover{
       font-size: 1.3rem;
   
     }
-  
+    .header__navegador--logoBarba{
+      margin-left: 0px;
+    }
   }

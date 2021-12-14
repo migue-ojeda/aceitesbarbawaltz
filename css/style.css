@@ -79,12 +79,18 @@ h1.h1BarbaBlog {
   .imagenProductoBlog {
     height: 500px;
   }
+  .blogBorderRadius {
+    border-radius: 30px;
+  }
 }
 
 /* Version Max576 */
 @media only screen and (max-width: 576px) {
   .imagenProductoBlog {
     height: 250px;
+  }
+  .blogBorderRadius {
+    border-radius: 30px;
   }
 }
 
@@ -647,8 +653,8 @@ nav ul li a {
 }
 
 .header__padding {
-  padding-left: 70px;
-  padding-right: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header__navegador--logoBarba {
@@ -840,6 +846,9 @@ img {
   .footerDisplayFlex .item2 {
     display: none;
   }
+  .header__navegador--logoBarba {
+    margin-left: 0px;
+  }
 }
 
 /* Version Min 576 Max992*/
@@ -849,6 +858,9 @@ img {
   }
   a:link {
     font-size: 1.3rem;
+  }
+  .header__navegador--logoBarba {
+    margin-left: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
